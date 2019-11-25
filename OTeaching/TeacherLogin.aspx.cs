@@ -52,7 +52,10 @@ namespace OTeaching
                         Response.Cookies["PWD"].Expires = DateTime.Now.AddDays(-1);
                     }
                     Session["EMAIL"] = tbemail.Text;
-                    // Response.Redirect("~/UserHome.aspx");
+                    SqlCommand cmd = new SqlCommand("Select Username from Instructor where Email='" + tbemail.Text + "'", con);
+                    string username = cmd.ExecuteScalar().ToString();
+                    Session["Instructor_username"] = username;
+                    Response.Redirect("~/Instructor/AssignedInstructorCourse.aspx");
                 }
                 else
                 {

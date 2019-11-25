@@ -68,7 +68,7 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
                         <asp:Button ID="btnlogin" runat="server" Text="Login" Class="btn btn-success" OnClick="btnlogin_Click"/>
-                        <asp:LinkButton ID="forgetpass" runat="server">Forget Password</asp:LinkButton>
+                        <asp:LinkButton ID="forgetpass" runat="server" OnClick="forgetpass_Click">Forget Password</asp:LinkButton>
                     </div>
                 </div>
                  <div class="form-group">

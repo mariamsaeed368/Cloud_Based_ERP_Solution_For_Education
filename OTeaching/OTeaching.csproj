@@ -68,11 +68,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
+    <Content Include="Admin\AssignClassCourse.aspx" />
+    <Content Include="Admin\Classes.aspx" />
+    <Content Include="Admin\Courses.aspx" />
     <Content Include="Admin\css\bootstrap.min.css" />
     <Content Include="Admin\css\font-awesome.min.css" />
     <Content Include="Admin\css\owl.carousel.css" />
     <Content Include="Admin\css\style.css" />
     <Content Include="Admin\icon-fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\InstructorCourse.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Instructor\AssignedInstructorCourse.aspx" />
+    <Content Include="Instructor\UploadCourseMaterial.aspx" />
+    <Content Include="ParentLogin.aspx" />
     <Content Include="Admin\img\add.jpg" />
     <Content Include="Admin\img\authors\1.jpg" />
     <Content Include="Admin\img\authors\2.jpg" />
@@ -121,6 +129,9 @@
     <Content Include="Admin\js\map.js" />
     <Content Include="Admin\js\mixitup.min.js" />
     <Content Include="Admin\js\owl.carousel.min.js" />
+    <Content Include="Admin\ParentRegistration.aspx" />
+    <Content Include="Admin\StudentClass.aspx" />
+    <Content Include="Admin\Welcome.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Instructor\css\bootstrap.min.css" />
@@ -177,6 +188,7 @@
     <Content Include="Instructor\js\owl.carousel.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="ResetPassword.aspx" />
     <Content Include="StudentLogin.aspx" />
     <Content Include="Student\css\bootstrap.min.css" />
     <Content Include="Student\css\font-awesome.min.css" />
@@ -230,6 +242,7 @@
     <Content Include="Student\js\map.js" />
     <Content Include="Student\js\mixitup.min.js" />
     <Content Include="Student\js\owl.carousel.min.js" />
+    <Content Include="Student\StudentCourse.aspx" />
     <Content Include="TeacherLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -241,12 +254,89 @@
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AssignClassCourse.aspx.cs">
+      <DependentUpon>AssignClassCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AssignClassCourse.aspx.designer.cs">
+      <DependentUpon>AssignClassCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InstructorCourse.aspx.cs">
+      <DependentUpon>InstructorCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InstructorCourse.aspx.designer.cs">
+      <DependentUpon>InstructorCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\AssignedInstructorCourse.aspx.cs">
+      <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\AssignedInstructorCourse.aspx.designer.cs">
+      <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\UploadCourseMaterial.aspx.cs">
+      <DependentUpon>UploadCourseMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\UploadCourseMaterial.aspx.designer.cs">
+      <DependentUpon>UploadCourseMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentLogin.aspx.cs">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentLogin.aspx.designer.cs">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\InstructorRegistration.aspx.cs">
       <DependentUpon>InstructorRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\InstructorRegistration.aspx.designer.cs">
       <DependentUpon>InstructorRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ParentRegistration.aspx.cs">
+      <DependentUpon>ParentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ParentRegistration.aspx.designer.cs">
+      <DependentUpon>ParentRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentClass.aspx.cs">
+      <DependentUpon>StudentClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentClass.aspx.designer.cs">
+      <DependentUpon>StudentClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -273,12 +363,26 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StudentLogin.aspx.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="StudentLogin.aspx.designer.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentCourse.aspx.cs">
+      <DependentUpon>StudentCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentCourse.aspx.designer.cs">
+      <DependentUpon>StudentCourse.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherLogin.aspx.cs">
       <DependentUpon>TeacherLogin.aspx</DependentUpon>
@@ -317,6 +421,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Instructor\CourseRelatedStuff\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

@@ -33,7 +33,22 @@
                      <a class="navbar-brand" href="#">Education System</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="Default.aspx">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="Welcome.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+          Register
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="ParentRegistration.aspx">Parent</a>
+          <a class="dropdown-item" href="InstructorRegistration.aspx">Teacher</a>
+        </div>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="Classes.aspx">Classes</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Courses.aspx">Courses</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Default.aspx">Logout</a>
@@ -44,7 +59,7 @@
            <!---- <div class="form-horizontal">--->
         <br />
         <h2>Register Instructor</h2>
-        <br />           
+        <hr />           
         <div class="form-horizontal">
              <div class="form-group">
                 <asp:HiddenField ID="hfInstructorId" runat="server" />
@@ -85,6 +100,12 @@
                         <asp:TextBox ID="tbexperience" CssClass="form-control" runat="server" placeholder="Experience"></asp:TextBox>
                 </div>
             </div>
+            <div class="form-group">
+                 <asp:Label ID="lblusername" runat="server" CssClass="col-md-2 control-label" Text="Username"></asp:Label>
+                    <div class="col-md-3">
+                        <asp:TextBox ID="tbusername" CssClass="form-control" runat="server" placeholder="Username"></asp:TextBox>
+                </div>
+            </div>
              <div class="form-group">
                  <asp:Label ID="email" runat="server" CssClass="col-md-2 control-label" Text="Email"></asp:Label>
                     <div class="col-md-3">
@@ -100,6 +121,7 @@
               <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         <asp:Button ID="btnadd" runat="server" Text="Add" Class="btn btn-success" OnClick="btnadd_Click"/>
                         <asp:Button ID="btnDelete" OnClientClick="return confirm('Are you sure?');" runat="server" Text="Delete" Class="btn btn-danger" OnClick="btnDelete_Click"/>
                         <asp:Button ID="btnClear" runat="server" Text="Clear" Class="btn btn-secondary" OnClick="btnClear_Click"/>
@@ -116,6 +138,7 @@
                     <asp:BoundField DataField="City" HeaderText="City"/>
                     <asp:BoundField DataField="Qualification" HeaderText="Qualification"/>
                     <asp:BoundField DataField="Experience" HeaderText="Experience"/>
+                    <asp:BoundField DataField="Username" HeaderText="Username"/>
                     <asp:BoundField DataField="Email" HeaderText="Email"/>
                     <asp:BoundField DataField="Password" HeaderText="Password"/>
 
@@ -167,5 +190,9 @@
         </div>
         </div>
     </form>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

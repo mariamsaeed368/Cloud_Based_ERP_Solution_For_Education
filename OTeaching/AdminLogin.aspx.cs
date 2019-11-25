@@ -42,7 +42,7 @@ namespace OTeaching
             }
             if (tbemail.Text == "admin@gmail.com" && tbpass.Text == "admin")
             {
-                 Response.Redirect("~/Admin/InstructorRegistration.aspx");
+                 Response.Redirect("~/Admin/Welcome.aspx");
 
             }
             else

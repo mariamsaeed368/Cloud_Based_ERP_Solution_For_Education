@@ -29,6 +29,7 @@ namespace OTeaching
             string CS = @"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(CS))
             {
+
                 SqlCommand read = new SqlCommand("Select * from StudentRegistration where Email='" + tbemail.Text + "' and Password='" + tbpass.Text + "'", con);
                 con.Open();
                 SqlDataAdapter sda = new SqlDataAdapter(read);
@@ -51,13 +52,21 @@ namespace OTeaching
                         Response.Cookies["PWD"].Expires = DateTime.Now.AddDays(-1);
                     }
                         Session["EMAIL"] = tbemail.Text;
-                       // Response.Redirect("~/UserHome.aspx");
+                        SqlCommand cmd = new SqlCommand("Select RegistrationNo from StudentRegistration where Email='" + tbemail.Text + "'", con);
+                        string registration_no = cmd.ExecuteScalar().ToString();
+                        Session["Registration_No"] = registration_no;
+                        Response.Redirect("~/Student/StudentCourse.aspx");
                 }
                 else
                 {
                     lblError.Text = "Invalid Email or Password";
                 }
             }
+        }
+
+        protected void forgetpass_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ResetPassword.aspx");
         }
     }
 }

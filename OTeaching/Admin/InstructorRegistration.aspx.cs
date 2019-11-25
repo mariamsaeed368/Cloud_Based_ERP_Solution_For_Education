@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace OTeaching.Admin
 {
     public partial class Instructor : System.Web.UI.Page
@@ -17,7 +18,7 @@ namespace OTeaching.Admin
             if (!IsPostBack)
             {
                 btnDelete.Enabled = false;
-                btnDelete.CssClass = "btn btn-success";
+                btnDelete.CssClass = "btn btn-danger";
 
                 FillGridView();
 
@@ -65,44 +66,89 @@ namespace OTeaching.Admin
 
                     if (btnadd.Text == "Add")
                     {
-                        SqlCommand sqlCmd3 = new SqlCommand("SELECT COUNT(*) FROM Instructor WHERE Email='" + tbemail.Text.Trim() + "'", sqlCon);
-
-                        int count = Convert.ToInt32(sqlCmd3.ExecuteScalar());
-                        if (count == 0)
+                        SqlCommand cmd1 = new SqlCommand("Select Count(*) from Constraints where Email='" + tbemail.Text + "'", sqlCon);
+                        int check = (int)cmd1.ExecuteScalar();
+                        if (check < 1)
                         {
-                            SqlCommand sqlCmd = new SqlCommand("AddInstructor", sqlCon);
-                            sqlCmd.CommandType = CommandType.StoredProcedure;
-                            sqlCmd.Parameters.AddWithValue("@InstructorID", (hfInstructorId.Value == "" ? 0 : Convert.ToInt32(hfInstructorId.Value)));
-                            sqlCmd.Parameters.AddWithValue("@Name", tbname.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Mobile", tbmobile.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Address", tbaddress.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@City", tbcity.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Qualification", tbqualification.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Experience", tbexperience.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Email", tbemail.Text.Trim());
-                            sqlCmd.Parameters.AddWithValue("@Password", tbpass.Text.Trim());
-                            sqlCmd.ExecuteNonQuery();
-                            string instructorID = hfInstructorId.Value;
-                            Clear();
+                            SqlCommand cmd3 = new SqlCommand("Select Count(*) from Constraints where Mobile='" + tbmobile.Text + "'", sqlCon);
+                            int check2 = (int)cmd3.ExecuteScalar();
 
-                            //   sqlCon.Close();
-
-                            lblMsg.Text = "Added Successfully";
+                            if (check2 < 1)
+                            {
+                                SqlCommand cmd5 = new SqlCommand("Select Count(*) from Constraints where Username='"+tbusername.Text+"'", sqlCon);
+                                int checkuname = (int)cmd5.ExecuteScalar();
+                                if(checkuname < 1)
+                                {
+                                    SqlCommand sqlCmd3 = new SqlCommand("SELECT COUNT(*) FROM Instructor WHERE Mobile='" + tbmobile.Text.Trim() + "'", sqlCon);
+                                    int count1 = Convert.ToInt32(sqlCmd3.ExecuteScalar());
+                                    if (count1 == 0)
+                                    {
+                                        SqlCommand sqlCmd4 = new SqlCommand("SELECT COUNT(*) FROM Instructor WHERE Email='" + tbemail.Text.Trim() + "'", sqlCon);
+                                        int count = Convert.ToInt32(sqlCmd4.ExecuteScalar());
+                                        if (count == 0)
+                                        {
+                                            SqlCommand sqlCmd5 = new SqlCommand("SELECT COUNT(*) FROM Instructor WHERE Username='" + tbusername.Text.Trim() + "'", sqlCon);
+                                            int checkusername = Convert.ToInt32(sqlCmd5.ExecuteScalar());
+                                            if (checkusername == 0)
+                                            {
+                                                SqlCommand sqlCmd = new SqlCommand("AddInstructor", sqlCon);
+                                                sqlCmd.CommandType = CommandType.StoredProcedure;
+                                                sqlCmd.Parameters.AddWithValue("@InstructorID", (hfInstructorId.Value == "" ? 0 : Convert.ToInt32(hfInstructorId.Value)));
+                                                sqlCmd.Parameters.AddWithValue("@Name", tbname.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Mobile", tbmobile.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Address", tbaddress.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@City", tbcity.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Qualification", tbqualification.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Experience", tbexperience.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Email", tbemail.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Password", tbpass.Text.Trim());
+                                                sqlCmd.Parameters.AddWithValue("@Username", tbusername.Text.Trim());
+                                                sqlCmd.ExecuteNonQuery();
+                                                SqlCommand cmd2 = new SqlCommand("Insert into Constraints(Email,Username,Mobile) values('" + tbemail.Text + "','" + tbusername.Text + "','" + tbmobile.Text + "')", sqlCon);
+                                                cmd2.ExecuteNonQuery();
+                                                string instructorID = hfInstructorId.Value;
+                                                Clear();
+                                                lblMsg.Text = "Added Successfully";
+                                            }
+                                            else
+                                            {
+                                                Label1.Text = "This Username is being used by another Instructor.";
+                                            }
+                                        }
+                                        else
+                                        {
+                                            lblMsg.Text = "Email Already Exist";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Label1.Text = "Mobile Already Exist";
+                                    }
+                                }
+                               
+                                else
+                                {
+                                    Label1.Text = "This Username is already being used by another user of the system.";
+                                }                              
+                            }
+                            else
+                            {
+                                Label1.Text = "Mobile number is already in use.";
+                            }
                         }
                         else
                         {
-                            lblMsg.Text = "Email Already Exist";
+                            Label1.Text = "Email is already in use.";
                         }
-
                     }
-
                     else
                     {
                         SqlCommand sqlCmd7 = new SqlCommand("SELECT COUNT(*) FROM Instructor  WHERE Email='" + tbemail.Text.Trim() + "' AND InstructorID!='" + Convert.ToInt32(hfInstructorId.Value) + "'", sqlCon);
-
                         int countEdit = Convert.ToInt32(sqlCmd7.ExecuteScalar());
                         if (countEdit == 0)
                         {
+                            SqlCommand cmd2 = new SqlCommand("Delete from Constraints where Email='" + tbemail.Text + "' AND Mobile='" + tbmobile.Text + "' AND Username='"+tbusername.Text+"'", sqlCon);
+                            cmd2.ExecuteNonQuery();
                             SqlCommand sqlCmd1 = new SqlCommand("EditInstructor", sqlCon);
                             sqlCmd1.CommandType = CommandType.StoredProcedure;
                             sqlCmd1.Parameters.AddWithValue("@InstructorID", (hfInstructorId.Value == "" ? 0 : Convert.ToInt32(hfInstructorId.Value)));
@@ -114,12 +160,11 @@ namespace OTeaching.Admin
                             sqlCmd1.Parameters.AddWithValue("@Experience", tbexperience.Text.Trim());
                             sqlCmd1.Parameters.AddWithValue("@Email", tbemail.Text.Trim());
                             sqlCmd1.Parameters.AddWithValue("@Password", tbpass.Text.Trim());
+                            sqlCmd1.Parameters.AddWithValue("@Username", tbusername.Text.Trim());
                             sqlCmd1.ExecuteNonQuery();
+                            SqlCommand cmd3 = new SqlCommand("Insert into Constraints(Email,Mobile,Username) values('" + tbemail.Text + "','" + tbmobile.Text + "','"+tbusername.Text+"')", sqlCon);
+                            cmd3.ExecuteNonQuery();
                             string instructorID = hfInstructorId.Value;
-
-
-
-
                             if (instructorID != "")
                                 lblMsg.Text = "Updated Succesfully";
                         }
@@ -139,9 +184,6 @@ namespace OTeaching.Admin
                 {
                     lblMsg.Text = ex.Message;
                 }
-
-
-
         }
         protected void lnk_OnClick(object sender, EventArgs e)
         {
@@ -184,6 +226,8 @@ namespace OTeaching.Admin
                 try
                 {
                     sqlCon.Open();
+                    SqlCommand cmd2 = new SqlCommand("Delete from Constraints where Email='" + tbemail.Text + "' AND Mobile='" + tbmobile.Text + "'", sqlCon);
+                    cmd2.ExecuteNonQuery();
                     SqlCommand sqlCmd = new SqlCommand("DeleteInstructorByID", sqlCon);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@InstructorID", Convert.ToInt32(hfInstructorId.Value));

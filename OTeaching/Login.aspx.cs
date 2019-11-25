@@ -16,7 +16,7 @@ namespace OTeaching
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminLogin.aspx");
+            Response.Redirect("ParentLogin.aspx");
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
@@ -26,6 +26,11 @@ namespace OTeaching
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("StudentLogin.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminLogin.aspx");
         }
     }
 }

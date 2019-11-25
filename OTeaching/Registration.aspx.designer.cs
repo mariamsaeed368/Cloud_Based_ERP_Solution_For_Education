@@ -94,6 +94,24 @@ namespace OTeaching {
         protected global::System.Web.UI.WebControls.TextBox tbregisteration;
         
         /// <summary>
+        /// lblusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblusername;
+        
+        /// <summary>
+        /// tbusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbusername;
+        
+        /// <summary>
         /// email control.
         /// </summary>
         /// <remarks>

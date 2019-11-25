@@ -28,27 +28,20 @@
 <body>
     <form id="form1" runat="server">
         <div>
+             <nav class="navbar-expand-lg navbar navbar-dark bg-dark navbar-fixed-top">
+                     <a class="navbar-brand" href="#">Education System</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="Default.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Login.aspx">Login</a>
+      </li>
+    </ul>
+    </nav>
    <div id="preloder">
 		<div class="loader"></div>
 	</div>
-
-	<!-- Header section -->
-	<header class="header-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 text-black-50">
-					<nav class="main-menu">
-						<ul>
-							<li class="text-black-50"><a href="Default.aspx">Home</a></li>
-							<li class="text-black-50"><a href="#">About us</a></li>
-							<li class="text-black-50"><a href="#">Contact</a></li>
-                            <li class="text-black-50"><a href="Login.aspx">Login</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
             <!-- Hero section -->
     <section class="hero-section set-bg" data-setbg="img/login.png">
 		<div class="container">
@@ -56,7 +49,9 @@
 				<h2>Select Your Role</h2>
                 <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Student" OnClick="Button1_Click" />
                 <asp:Button ID="Button2" runat="server" class="btn btn-secondary" Text="Teacher" OnClick="Button2_Click" />
-                <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Admin" OnClick="Button3_Click" />
+                <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Parent" OnClick="Button3_Click" />
+                <asp:Button ID="Button4" runat="server" class="btn btn-secondary" Text="Admin" OnClick="Button4_Click"  />
+
 			</div>
 		</div>
 	</section>

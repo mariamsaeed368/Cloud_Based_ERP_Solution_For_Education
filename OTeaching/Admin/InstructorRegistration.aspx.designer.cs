@@ -139,6 +139,24 @@ namespace OTeaching.Admin {
         protected global::System.Web.UI.WebControls.TextBox tbexperience;
         
         /// <summary>
+        /// lblusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblusername;
+        
+        /// <summary>
+        /// tbusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbusername;
+        
+        /// <summary>
         /// email control.
         /// </summary>
         /// <remarks>
@@ -173,6 +191,15 @@ namespace OTeaching.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbpass;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// btnadd control.

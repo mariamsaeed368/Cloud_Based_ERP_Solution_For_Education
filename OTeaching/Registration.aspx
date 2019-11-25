@@ -71,6 +71,12 @@
                 </div>
             </div>
              <div class="form-group">
+                 <asp:Label ID="lblusername" runat="server" CssClass="col-md-2 control-label" Text="Username"></asp:Label>
+                    <div class="col-md-3">
+                        <asp:TextBox ID="tbusername" CssClass="form-control" runat="server" placeholder="Username"></asp:TextBox>
+                </div>
+            </div>
+             <div class="form-group">
                  <asp:Label ID="email" runat="server" CssClass="col-md-2 control-label" Text="Email"></asp:Label>
                     <div class="col-md-3">
                         <asp:TextBox ID="tbemail" CssClass="form-control" TextMode="Email" runat="server" placeholder="Email"></asp:TextBox>
