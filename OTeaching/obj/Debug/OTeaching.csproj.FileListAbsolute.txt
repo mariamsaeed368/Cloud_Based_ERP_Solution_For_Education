@@ -165,3 +165,4 @@ C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csproj.CopyComplete
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.dll
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.pdb
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csprojAssemblyReference.cache

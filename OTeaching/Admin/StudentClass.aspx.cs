@@ -87,7 +87,7 @@ namespace OTeaching.Admin
             }
             else
             {
-                lblErrormessage.Text = "This Registration No is already registered in this class.";
+                lblErrormessage.Text = "This Registration No is already registered in Class";
             }
             
         }

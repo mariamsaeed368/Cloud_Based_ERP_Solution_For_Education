@@ -55,6 +55,9 @@ namespace OTeaching
                         SqlCommand cmd = new SqlCommand("Select RegistrationNo from StudentRegistration where Email='" + tbemail.Text + "'", con);
                         string registration_no = cmd.ExecuteScalar().ToString();
                         Session["Registration_No"] = registration_no;
+                        SqlCommand cmd1 = new SqlCommand("Select Username from StudentRegistration where Email='" + tbemail.Text + "'", con);
+                        string Student_username = cmd1.ExecuteScalar().ToString();
+                        Session["Student_Username"] = Student_username;
                         Response.Redirect("~/Student/StudentCourse.aspx");
                 }
                 else

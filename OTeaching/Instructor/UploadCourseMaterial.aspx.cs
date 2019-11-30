@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
-using System.Net;
 using System.IO;
 
 namespace OTeaching.Instructor
@@ -16,7 +15,7 @@ namespace OTeaching.Instructor
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtInstructorCourseID.Text = Session["instructorcourseid"].ToString();
+            txtClassCourseID.Text = Session["classcourseid"].ToString();
             FillGridView();
         }
 
@@ -26,23 +25,29 @@ namespace OTeaching.Instructor
             string flocation = "CourseRelatedStuff/";
             string pathstring = System.IO.Path.Combine(flocation, fname);
             sqlCon.Open();
-            SqlCommand cmd = new SqlCommand("Insert into CourseMaterial(InstructorCourseID,FileName,FileLocation) values('" + txtInstructorCourseID.Text + "','" + txtFileName.Text + "','" + pathstring + "')", sqlCon);
-            cmd.ExecuteNonQuery();
-            //Saving the physcal file location
-            string path = Server.MapPath(pathstring);
-            FileUpload1.SaveAs(@path);
-            lblSuccessMessage.Text = "File Uploaded Successfully";
-        }
-        public void Clear()
-        {
-            txtFileName.Text = " ";
-            hfUploadID.Value = " ";
-            lblErrormessage.Text = lblSuccessMessage.Text = " ";
+            SqlCommand cmd1 = new SqlCommand("Select * from CourseMaterial where FileLocation='" + pathstring + "' And ClassCourseID='" + txtClassCourseID.Text + "'");
+            int check = (int)cmd1.ExecuteScalar();
+            if (check < 1)
+            {
+                SqlCommand cmd = new SqlCommand("Insert into CourseMaterial(ClassCourseID,FileName,FileLocation) values('" + txtClassCourseID.Text + "','" + txtFileName.Text + "','" + pathstring + "')", sqlCon);
+                cmd.ExecuteNonQuery();
+                //Saving the physcal file location
+                string path = Server.MapPath(pathstring);
+                FileUpload1.SaveAs(@path);
+                lblSuccessMessage.Text = "File Uploaded Successfully";
+                FillGridView();
+            }
+            else
+            {
+                lblErrormessage.Text = "This File has already been uploaded in this Section.";
+            }
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
         {
-            Clear();
+            txtFileName.Text = " ";
+            hfUploadID.Value = " ";
+            lblErrormessage.Text = lblSuccessMessage.Text = " ";
         }
         void FillGridView()
         {
@@ -73,10 +78,12 @@ namespace OTeaching.Instructor
                 SqlCommand cmd = new SqlCommand("Delete From CourseMaterial where UploadID='" + uploadid + "'", sqlCon);
                 cmd.ExecuteNonQuery();
                 lblSuccessMessage.Text = "File deleted successfully";
+                FillGridView();
             }
             else
             {
                 lblErrormessage.Text = "This file does not exists ";
+                FillGridView();
             }
         }
     }

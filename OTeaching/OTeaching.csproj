@@ -79,6 +79,11 @@
     <Content Include="Admin\InstructorCourse.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Instructor\AssignedInstructorCourse.aspx" />
+    <Content Include="Instructor\communication.aspx" />
+    <Content Include="Instructor\load_messages.aspx" />
+    <Content Include="Instructor\load_new_messages.aspx" />
+    <Content Include="Instructor\messages_send_from_teacher.aspx" />
+    <Content Include="Instructor\sendmessage.aspx" />
     <Content Include="Instructor\UploadCourseMaterial.aspx" />
     <Content Include="ParentLogin.aspx" />
     <Content Include="Admin\img\add.jpg" />
@@ -190,6 +195,7 @@
     <Content Include="Registration.aspx" />
     <Content Include="ResetPassword.aspx" />
     <Content Include="StudentLogin.aspx" />
+    <Content Include="Student\communication.aspx" />
     <Content Include="Student\css\bootstrap.min.css" />
     <Content Include="Student\css\font-awesome.min.css" />
     <Content Include="Student\css\owl.carousel.css" />
@@ -242,6 +248,10 @@
     <Content Include="Student\js\map.js" />
     <Content Include="Student\js\mixitup.min.js" />
     <Content Include="Student\js\owl.carousel.min.js" />
+    <Content Include="Student\load_messages.aspx" />
+    <Content Include="Student\load_new_messages.aspx" />
+    <Content Include="Student\messages_send_from_student.aspx" />
+    <Content Include="Student\sendmessage.aspx" />
     <Content Include="Student\StudentCourse.aspx" />
     <Content Include="TeacherLogin.aspx" />
     <Content Include="Web.config" />
@@ -295,6 +305,48 @@
     </Compile>
     <Compile Include="Instructor\AssignedInstructorCourse.aspx.designer.cs">
       <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\communication.aspx.cs">
+      <DependentUpon>communication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\communication.aspx.designer.cs">
+      <DependentUpon>communication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\Instructor.Master.cs">
+      <DependentUpon>Instructor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\Instructor.Master.designer.cs">
+      <DependentUpon>Instructor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\load_messages.aspx.cs">
+      <DependentUpon>load_messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\load_messages.aspx.designer.cs">
+      <DependentUpon>load_messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\load_new_messages.aspx.cs">
+      <DependentUpon>load_new_messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\load_new_messages.aspx.designer.cs">
+      <DependentUpon>load_new_messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\messages_send_from_teacher.aspx.cs">
+      <DependentUpon>messages_send_from_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\messages_send_from_teacher.aspx.designer.cs">
+      <DependentUpon>messages_send_from_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\sendmessage.aspx.cs">
+      <DependentUpon>sendmessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\sendmessage.aspx.designer.cs">
+      <DependentUpon>sendmessage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor\UploadCourseMaterial.aspx.cs">
       <DependentUpon>UploadCourseMaterial.aspx</DependentUpon>
@@ -377,6 +429,48 @@
     <Compile Include="StudentLogin.aspx.designer.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\communication.aspx.cs">
+      <DependentUpon>communication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\communication.aspx.designer.cs">
+      <DependentUpon>communication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\load_messages.aspx.cs">
+      <DependentUpon>load_messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\load_messages.aspx.designer.cs">
+      <DependentUpon>load_messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\load_new_messages.aspx.cs">
+      <DependentUpon>load_new_messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\load_new_messages.aspx.designer.cs">
+      <DependentUpon>load_new_messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\messages_send_from_student.aspx.cs">
+      <DependentUpon>messages_send_from_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\messages_send_from_student.aspx.designer.cs">
+      <DependentUpon>messages_send_from_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\sendmessage.aspx.cs">
+      <DependentUpon>sendmessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\sendmessage.aspx.designer.cs">
+      <DependentUpon>sendmessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
     <Compile Include="Student\StudentCourse.aspx.cs">
       <DependentUpon>StudentCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -405,6 +499,7 @@
     <Content Include="Instructor\icon-fonts\fontawesome-webfont.eot" />
     <Content Include="Instructor\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Instructor\icon-fonts\fontawesome-webfont.woff2" />
+    <Content Include="Instructor\Instructor.Master" />
     <None Include="packages.config" />
     <Content Include="Student\fonts\Futura.woff" />
     <Content Include="Student\fonts\Futura1.woff" />
@@ -412,6 +507,7 @@
     <Content Include="Student\icon-fonts\fontawesome-webfont.eot" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff2" />
+    <Content Include="Student\Student.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

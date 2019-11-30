@@ -31,22 +31,22 @@ namespace OTeaching.Instructor {
         protected global::System.Web.UI.WebControls.HiddenField hfUploadID;
         
         /// <summary>
-        /// lblInstructorCourseID control.
+        /// lblClassCourseID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInstructorCourseID;
+        protected global::System.Web.UI.WebControls.Label lblClassCourseID;
         
         /// <summary>
-        /// txtInstructorCourseID control.
+        /// txtClassCourseID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInstructorCourseID;
+        protected global::System.Web.UI.WebControls.TextBox txtClassCourseID;
         
         /// <summary>
         /// lblFileName control.

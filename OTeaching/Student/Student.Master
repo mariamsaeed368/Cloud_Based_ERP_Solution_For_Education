@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="OTeaching.Student.Student" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>Education</title>
+    <meta charset="UTF-8"/>
+	<meta name="description" content="WebUni Education Template"/>
+	<meta name="keywords" content="webuni, education, creative, html"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+
+	<!-- Stylesheets -->
+    
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+	<![endif]-->
+    <style>
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -60px;
+}
+    </style>    
+</head>
+<body>
+              <nav class="navbar-expand-lg navbar navbar-dark bg-dark navbar-fixed-top">
+                     <a class="navbar-brand" href="#">Education System</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="Welcome.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="StudentCourse.aspx">Enrolled Courses</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="sendmessage.aspx">Send Message</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="Default.aspx">Logout</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+                <div class="dropdown for-message">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                id="message"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fa fa-bell" style="font-size:24px;color:white"></i>
+                            <span class="count"><asp:Label ID="notification" runat="server"></asp:Label></span>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="message">
+                            <p class="red">You have <asp:Label ID="notification2" runat="server"></asp:Label> Mails</p>
+                              <asp:Repeater ID="r1" runat="server">
+                                  <ItemTemplate>
+                               <a class="dropdown-item media" style="border-style:solid; border-width:1px; border-color:grey;" href="communication.aspx?username=<%#Eval("Susername") %>">
+                                    <span class="message media-body">
+                                          <span class="name float-left"><%#Eval("Susername")%></span>
+                                           <p><%#Get20characters(Eval("Message"))%></p>
+                                </span>
+                                </a>
+                                      </ItemTemplate>
+                              </asp:Repeater>
+                          </div>
+                    </div>
+        </li>
+            </ul>
+    </nav>
+            <asp:ContentPlaceHolder ID="c1" runat="server">
+            </asp:ContentPlaceHolder>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

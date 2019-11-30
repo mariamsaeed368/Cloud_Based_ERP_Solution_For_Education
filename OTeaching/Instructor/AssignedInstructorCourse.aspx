@@ -1,48 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AssignedInstructorCourse.aspx.cs" Inherits="OTeaching.Instructor.AssignedInstructorCourse" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Education</title>
-    <meta charset="UTF-8"/>
-	<meta name="description" content="WebUni Education Template"/>
-	<meta name="keywords" content="webuni, education, creative, html"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet"/>
-
-	<!-- Stylesheets -->
-    
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-	<![endif]-->
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-             <nav class="navbar-expand-lg navbar navbar-dark bg-dark navbar-fixed-top">
-                     <a class="navbar-brand" href="#">Education System</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="Welcome.aspx">Home <span class="sr-only">(current)</span></a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="AssignedInstructorCourse.aspx">Assigned Courses</a>
-      </li>
-         <li class="nav-item">
-        <a class="nav-link" href="Default.aspx">Logout</a>
-      </li>
-    </ul>
-    </nav>
-      <div class="container">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Instructor/Instructor.Master" AutoEventWireup="true" CodeBehind="AssignedInstructorCourse.aspx.cs" Inherits="OTeaching.Instructor.AssignedInstructorCourse" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
+     <form id="form1" runat="server">
+ <div class="container">
        <div class="form-horizontal">
           <br />
             <h2>Assigned Courses</h2>
@@ -55,7 +14,7 @@
                     <asp:BoundField DataField="Section" HeaderText="Section"/>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="lnkcoursematerial" runat="server" CommandArgument='<%# Eval("InstructorCourseID")%>' Text="Upload Course Material" OnClick="lnkcoursematerial_OnClick" />
+                            <asp:LinkButton ID="lnkcoursematerial" runat="server" CommandArgument='<%# Eval("ClassCourseID")%>' Text="Upload Course Material" OnClick="lnkcoursematerial_OnClick" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
@@ -80,10 +39,10 @@
                     border-left: solid 1px #525252; 
                     font-size: 0.9em; 
             }
-.mGrid .alt { background: #D3D3D3 url(grd_alt.png) repeat-x top; }
-.mGrid .pgr { background: #424242 url(grd_pgr.png) repeat-x top; }
-.mGrid .pgr table { margin: 5px 0; }
-.mGrid .pgr td { 
+            .mGrid .alt { background: #D3D3D3 url(grd_alt.png) repeat-x top; }
+            .mGrid .pgr { background: #424242 url(grd_pgr.png) repeat-x top; }
+            .mGrid .pgr table { margin: 5px 0; }
+            .mGrid .pgr td { 
     border-width: 0; 
     padding: 0 6px; 
     border-left: solid 1px #666; 
@@ -91,10 +50,8 @@
     color: #fff; 
     line-height: 12px; 
  }   
-.mGrid .pgr a { color: #666; text-decoration: none; }
-.mGrid .pgr a:hover { color: #000; text-decoration: none; }
+            .mGrid .pgr a { color: #666; text-decoration: none; }
+            .mGrid .pgr a:hover { color: #000; text-decoration: none; }
         </style>
-        </div>
     </form>
-</body>
-</html>
+</asp:Content>
