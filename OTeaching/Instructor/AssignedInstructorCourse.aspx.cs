@@ -34,6 +34,12 @@ namespace OTeaching.Instructor
             Session["classcourseid"] = instructorcourseid;
             Response.Redirect("UploadCourseMaterial.aspx");
         }
+        protected void lnkcreateexam_OnClick(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["classcourseid"] = id;
+            Response.Redirect("CreateExam.aspx");
+        }
 
     }
 }

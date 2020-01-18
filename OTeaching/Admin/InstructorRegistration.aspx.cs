@@ -112,7 +112,7 @@ namespace OTeaching.Admin
                                             }
                                             else
                                             {
-                                                Label1.Text = "This Username is being used by another Instructor.";
+                                                lblMsg.Text = "This Username is being used by another Instructor.";
                                             }
                                         }
                                         else
@@ -122,23 +122,23 @@ namespace OTeaching.Admin
                                     }
                                     else
                                     {
-                                        Label1.Text = "Mobile Already Exist";
+                                        lblMsg.Text = "Mobile Already Exist";
                                     }
                                 }
                                
                                 else
                                 {
-                                    Label1.Text = "This Username is already being used by another user of the system.";
+                                    lblMsg.Text = "This Username is already being used by another user of the system.";
                                 }                              
                             }
                             else
                             {
-                                Label1.Text = "Mobile number is already in use.";
+                                lblMsg.Text = "Mobile number is already in use.";
                             }
                         }
                         else
                         {
-                            Label1.Text = "Email is already in use.";
+                            lblMsg.Text = "Email is already in use.";
                         }
                     }
                     else

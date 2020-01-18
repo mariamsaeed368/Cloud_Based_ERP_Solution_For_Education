@@ -105,7 +105,6 @@ C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csprojAssemblyReference.cache
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csproj.CopyComplete
 C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.dll
@@ -166,3 +165,4 @@ C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.dll
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.pdb
 C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\OTeaching.csprojAssemblyReference.cache

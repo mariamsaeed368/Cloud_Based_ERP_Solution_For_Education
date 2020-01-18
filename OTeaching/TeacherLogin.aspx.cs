@@ -54,6 +54,9 @@ namespace OTeaching
                     Session["EMAIL"] = tbemail.Text;
                     SqlCommand cmd = new SqlCommand("Select Username from Instructor where Email='" + tbemail.Text + "'", con);
                     string username = cmd.ExecuteScalar().ToString();
+                    SqlCommand cmd1 = new SqlCommand("Select InstructorID from Instructor where Email='" + tbemail.Text + "'", con);
+                    string id = cmd1.ExecuteScalar().ToString();
+                    Session["InstructorID"] = id;
                     Session["Instructor_username"] = username;
                     Response.Redirect("~/Instructor/AssignedInstructorCourse.aspx");
                 }

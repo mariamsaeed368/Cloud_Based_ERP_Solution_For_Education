@@ -25,8 +25,8 @@ namespace OTeaching.Instructor
             string flocation = "CourseRelatedStuff/";
             string pathstring = System.IO.Path.Combine(flocation, fname);
             sqlCon.Open();
-            SqlCommand cmd1 = new SqlCommand("Select * from CourseMaterial where FileLocation='" + pathstring + "' And ClassCourseID='" + txtClassCourseID.Text + "'");
-            int check = (int)cmd1.ExecuteScalar();
+            SqlCommand cmd1 = new SqlCommand("Select * from CourseMaterial where FileLocation='" + pathstring + "' And ClassCourseID='" + txtClassCourseID.Text + "'",sqlCon);
+            int check = (int)cmd1.ExecuteNonQuery();
             if (check < 1)
             {
                 SqlCommand cmd = new SqlCommand("Insert into CourseMaterial(ClassCourseID,FileName,FileLocation) values('" + txtClassCourseID.Text + "','" + txtFileName.Text + "','" + pathstring + "')", sqlCon);
@@ -55,7 +55,7 @@ namespace OTeaching.Instructor
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * from CourseMaterial";
+            cmd.CommandText = "Select cm.* from Instructor i join InstructorCourse ic on ic.InstructorID=i.InstructorID join ClassCourse cc on cc.InstructorCourseID=ic.InstructorCourseID join CourseMaterial cm on cm.ClassCourseID=cc.ClassCourseID where i.InstructorID='"+ Session["InstructorID"]+"'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);

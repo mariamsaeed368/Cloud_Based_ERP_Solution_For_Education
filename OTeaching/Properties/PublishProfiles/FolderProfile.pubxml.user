@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/AssignClassCourse.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/Classes.aspx">
+      <publishTime>01/15/2020 07:32:25</publishTime>
+    </File>
+    <File Include="Admin/Courses.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/css/bootstrap.min.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/css/font-awesome.min.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/css/owl.carousel.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/css/style.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/fonts/Futura.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/fonts/Futura1.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/fonts/WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/icon-fonts/fontawesome-webfont.eot">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/icon-fonts/fontawesome-webfont.svg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/icon-fonts/fontawesome-webfont.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/icon-fonts/fontawesome-webfont.woff2">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/add.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/7.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/authors/8.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/blog/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/blog/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/blog/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/categories/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/7.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/8.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/f-1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/f-2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/courses/single.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/favicon.ico">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/login.png">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/logo.png">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-bg/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-bg/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-bg/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-bg/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-bg/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/page-top-bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/img/signup-bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/InstructorCourse.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/InstructorRegistration.aspx">
+      <publishTime>12/03/2019 13:43:54</publishTime>
+    </File>
+    <File Include="Admin/js/bootstrap.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/circle-progress.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/jquery-3.2.1.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/main.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/map.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/mixitup.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/js/owl.carousel.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/ParentRegistration.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/StudentClass.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Admin/Welcome.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="AdminLogin.aspx">
+      <publishTime>12/03/2019 11:08:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="bin/OTeaching.dll">
+      <publishTime>01/18/2020 10:35:07</publishTime>
+    </File>
+    <File Include="bin/OTeaching.pdb">
+      <publishTime>01/18/2020 10:35:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>12/03/2019 11:00:13</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/AssignedInstructorCourse.aspx">
+      <publishTime>01/15/2020 07:28:07</publishTime>
+    </File>
+    <File Include="Instructor/communication.aspx">
+      <publishTime>12/03/2019 11:19:45</publishTime>
+    </File>
+    <File Include="Instructor/CreateExam.aspx">
+      <publishTime>01/15/2020 19:40:12</publishTime>
+    </File>
+    <File Include="Instructor/CreateTest.aspx">
+      <publishTime>01/15/2020 08:44:33</publishTime>
+    </File>
+    <File Include="Instructor/css/bootstrap.min.css">
+      <publishTime>12/03/2019 13:19:05</publishTime>
+    </File>
+    <File Include="Instructor/css/font-awesome.min.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/css/owl.carousel.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/css/style.css">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/fonts/Futura.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/fonts/Futura1.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/fonts/WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/icon-fonts/fontawesome-webfont.eot">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/icon-fonts/fontawesome-webfont.svg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/icon-fonts/fontawesome-webfont.woff">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/icon-fonts/fontawesome-webfont.woff2">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/add.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/7.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/authors/8.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/blog/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/blog/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/blog/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/categories/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/6.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/7.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/8.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/f-1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/f-2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/courses/single.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/favicon.ico">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/login.png">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/logo.png">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-bg/1.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-bg/2.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-bg/3.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-bg/4.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-bg/5.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/page-top-bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/img/signup-bg.jpg">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/Instructor.Master">
+      <publishTime>01/18/2020 09:07:52</publishTime>
+    </File>
+    <File Include="Instructor/js/bootstrap.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/circle-progress.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/jquery-3.2.1.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/main.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/map.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/mixitup.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/js/owl.carousel.min.js">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/load_messages.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/load_new_messages.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/messages_send_from_teacher.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/sendmessage.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Instructor/UploadCourseMaterial.aspx">
+      <publishTime>01/18/2020 09:24:02</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="ParentLogin.aspx">
+      <publishTime>12/03/2019 11:00:11</publishTime>
+    </File>
+    <File Include="Registration.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="ResetPassword.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/AvailableTests.aspx">
+      <publishTime>01/17/2020 13:14:10</publishTime>
+    </File>
+    <File Include="Student/communication.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/css/bootstrap.min.css">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/css/font-awesome.min.css">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/css/owl.carousel.css">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/css/style.css">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/DownloadCourseMaterial.aspx">
+      <publishTime>01/15/2020 06:44:12</publishTime>
+    </File>
+    <File Include="Student/fonts/Futura.woff">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/fonts/Futura1.woff">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/fonts/WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/icon-fonts/fontawesome-webfont.eot">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/icon-fonts/fontawesome-webfont.svg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/icon-fonts/fontawesome-webfont.woff">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/icon-fonts/fontawesome-webfont.woff2">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/add.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/3.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/4.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/5.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/6.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/7.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/authors/8.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/bg.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/blog/1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/blog/2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/blog/3.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/3.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/4.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/5.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/categories/6.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/3.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/4.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/5.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/6.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/7.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/8.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/f-1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/f-2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/courses/single.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/favicon.ico">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/login.png">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/logo.png">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-bg/1.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-bg/2.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-bg/3.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-bg/4.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-bg/5.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/page-top-bg.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/img/signup-bg.jpg">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/bootstrap.min.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/circle-progress.min.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/jquery-3.2.1.min.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/main.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/map.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/mixitup.min.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/js/owl.carousel.min.js">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/load_messages.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/load_new_messages.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/messages_send_from_student.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/sendmessage.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Student/StartTest.aspx">
+      <publishTime>01/17/2020 13:37:53</publishTime>
+    </File>
+    <File Include="Student/Student.Master">
+      <publishTime>01/18/2020 09:08:10</publishTime>
+    </File>
+    <File Include="Student/StudentCourse.aspx">
+      <publishTime>01/15/2020 09:56:30</publishTime>
+    </File>
+    <File Include="Student/StudentResult.aspx">
+      <publishTime>01/17/2020 14:06:11</publishTime>
+    </File>
+    <File Include="StudentLogin.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="TeacherLogin.aspx">
+      <publishTime>12/03/2019 11:00:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/18/2020 10:35:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

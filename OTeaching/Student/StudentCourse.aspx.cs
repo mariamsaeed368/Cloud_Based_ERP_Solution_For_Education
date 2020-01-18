@@ -19,7 +19,7 @@ namespace OTeaching.Student
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
             string registration_no = Session["Registration_No"].ToString();
-            cmd.CommandText = "Select cr.CourseName,ins.Name as Instructor_Name,cl.ClassName,cl.Section,s.RegistrationNo from ClassCourse c join Class cl on cl.ClassID=c.ClassID join Enrollment e on e.ClassID=c.ClassID join StudentRegistration s on s.RegistrationID=e.RegistrationID join InstructorCourse i on i.InstructorCourseID=c.InstructorCourseID join Courses cr on cr.CourseID=i.CourseID join Instructor ins on ins.InstructorID=i.InstructorID where RegistrationNo='" + registration_no + "'";
+            cmd.CommandText = "Select c.ClassCourseID,cr.CourseName,ins.Name as Instructor_Name,cl.ClassName,cl.Section,s.RegistrationNo from ClassCourse c join Class cl on cl.ClassID=c.ClassID join Enrollment e on e.ClassID=c.ClassID join StudentRegistration s on s.RegistrationID=e.RegistrationID join InstructorCourse i on i.InstructorCourseID=c.InstructorCourseID join Courses cr on cr.CourseID=i.CourseID join Instructor ins on ins.InstructorID=i.InstructorID where RegistrationNo='" + registration_no + "'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -28,5 +28,12 @@ namespace OTeaching.Student
             GridView1.DataBind();
             sqlCon.Close();
         }
+        protected void lnkcoursematerial_OnClick(object sender, EventArgs e)
+        {
+            int classcourseid = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["ClassCourseID"] = classcourseid;
+            Response.Redirect("DownloadCourseMaterial.aspx");
+        }
+
     }
 }

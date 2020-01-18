@@ -80,6 +80,8 @@
     <Content Include="ChangePassword.aspx" />
     <Content Include="Instructor\AssignedInstructorCourse.aspx" />
     <Content Include="Instructor\communication.aspx" />
+    <Content Include="Instructor\CreateExam.aspx" />
+    <Content Include="Instructor\CreateTest.aspx" />
     <Content Include="Instructor\load_messages.aspx" />
     <Content Include="Instructor\load_new_messages.aspx" />
     <Content Include="Instructor\messages_send_from_teacher.aspx" />
@@ -195,11 +197,13 @@
     <Content Include="Registration.aspx" />
     <Content Include="ResetPassword.aspx" />
     <Content Include="StudentLogin.aspx" />
+    <Content Include="Student\AvailableTests.aspx" />
     <Content Include="Student\communication.aspx" />
     <Content Include="Student\css\bootstrap.min.css" />
     <Content Include="Student\css\font-awesome.min.css" />
     <Content Include="Student\css\owl.carousel.css" />
     <Content Include="Student\css\style.css" />
+    <Content Include="Student\DownloadCourseMaterial.aspx" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.svg" />
     <Content Include="Student\img\add.jpg" />
     <Content Include="Student\img\authors\1.jpg" />
@@ -252,7 +256,9 @@
     <Content Include="Student\load_new_messages.aspx" />
     <Content Include="Student\messages_send_from_student.aspx" />
     <Content Include="Student\sendmessage.aspx" />
+    <Content Include="Student\StartTest.aspx" />
     <Content Include="Student\StudentCourse.aspx" />
+    <Content Include="Student\StudentResult.aspx" />
     <Content Include="TeacherLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -312,6 +318,20 @@
     </Compile>
     <Compile Include="Instructor\communication.aspx.designer.cs">
       <DependentUpon>communication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\CreateExam.aspx.cs">
+      <DependentUpon>CreateExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\CreateExam.aspx.designer.cs">
+      <DependentUpon>CreateExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\CreateTest.aspx.cs">
+      <DependentUpon>CreateTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\CreateTest.aspx.designer.cs">
+      <DependentUpon>CreateTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor\Instructor.Master.cs">
       <DependentUpon>Instructor.Master</DependentUpon>
@@ -429,12 +449,26 @@
     <Compile Include="StudentLogin.aspx.designer.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\AvailableTests.aspx.cs">
+      <DependentUpon>AvailableTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\AvailableTests.aspx.designer.cs">
+      <DependentUpon>AvailableTests.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student\communication.aspx.cs">
       <DependentUpon>communication.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Student\communication.aspx.designer.cs">
       <DependentUpon>communication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\DownloadCourseMaterial.aspx.cs">
+      <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\DownloadCourseMaterial.aspx.designer.cs">
+      <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\load_messages.aspx.cs">
       <DependentUpon>load_messages.aspx</DependentUpon>
@@ -464,6 +498,13 @@
     <Compile Include="Student\sendmessage.aspx.designer.cs">
       <DependentUpon>sendmessage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\StartTest.aspx.cs">
+      <DependentUpon>StartTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StartTest.aspx.designer.cs">
+      <DependentUpon>StartTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student\Student.Master.cs">
       <DependentUpon>Student.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -477,6 +518,13 @@
     </Compile>
     <Compile Include="Student\StudentCourse.aspx.designer.cs">
       <DependentUpon>StudentCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentResult.aspx.cs">
+      <DependentUpon>StudentResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentResult.aspx.designer.cs">
+      <DependentUpon>StudentResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherLogin.aspx.cs">
       <DependentUpon>TeacherLogin.aspx</DependentUpon>
@@ -508,6 +556,7 @@
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff2" />
     <Content Include="Student\Student.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
