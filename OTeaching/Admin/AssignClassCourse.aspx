@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AssignClassCourse.aspx.cs" Inherits="OTeaching.Admin.AssignClassCourse" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AssignClassCourse.aspx.cs" Inherits="OTeaching.Admin.AssignClassCourse" %>
 
 <!DOCTYPE html>
 

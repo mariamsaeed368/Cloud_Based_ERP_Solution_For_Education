@@ -14,7 +14,6 @@ namespace OTeaching.Admin
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Label1.Text = Session["test"].ToString();
             if (!IsPostBack)
             {
                 btnDelete.Enabled = false;

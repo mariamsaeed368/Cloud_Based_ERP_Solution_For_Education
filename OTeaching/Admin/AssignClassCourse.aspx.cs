@@ -67,9 +67,11 @@ namespace OTeaching.Admin
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand("Select ClassID from Class where ClassName='" + ddlclassname.Text + "' AND Section='" + ddlsection.Text + "'", sqlCon);
             int id = (int)cmd.ExecuteScalar();
-            SqlCommand cmd1 = new SqlCommand("Select Count(*) from ClassCourse c join Class cl on c.ClassID=cl.ClassID where c.InstructorCourseID='"+txtInstructorCourseID.Text+"' AND cl.ClassName='"+ddlclassname.Text+"' AND cl.Section='"+ddlsection.Text+"'", sqlCon);
+            SqlCommand cmd1 = new SqlCommand("Select CourseID from InstructorCourse where InstructorCourseID='" + txtInstructorCourseID.Text + "'", sqlCon);
             int check = (int)cmd1.ExecuteScalar();
-            if(check<1)
+            SqlCommand cmd2 = new SqlCommand("Select Count(*) from ClassCourse c join Class cl on c.ClassID=cl.ClassID join InstructorCourse ic on ic.InstructorCourseID=c.InstructorCourseID where ic.CourseID='"+check+"' AND cl.ClassName='"+ddlclassname.Text+"' AND cl.Section='"+ddlsection.Text+"'", sqlCon);
+            int check1 = (int)cmd2.ExecuteScalar();
+            if(check1<1)
             {
                 SqlCommand sqlCmd = new SqlCommand("ClassCourseCreateOrUpdate", sqlCon);
                 sqlCmd.CommandType = CommandType.StoredProcedure;

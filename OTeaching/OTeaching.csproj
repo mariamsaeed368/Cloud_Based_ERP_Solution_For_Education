@@ -79,6 +79,7 @@
     <Content Include="Admin\InstructorCourse.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Instructor\AssignedInstructorCourse.aspx" />
+    <Content Include="Instructor\Attendence.aspx" />
     <Content Include="Instructor\communication.aspx" />
     <Content Include="Instructor\CreateExam.aspx" />
     <Content Include="Instructor\CreateTest.aspx" />
@@ -311,6 +312,13 @@
     </Compile>
     <Compile Include="Instructor\AssignedInstructorCourse.aspx.designer.cs">
       <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\Attendence.aspx.cs">
+      <DependentUpon>Attendence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\Attendence.aspx.designer.cs">
+      <DependentUpon>Attendence.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor\communication.aspx.cs">
       <DependentUpon>communication.aspx</DependentUpon>

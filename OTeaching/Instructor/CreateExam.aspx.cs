@@ -23,7 +23,7 @@ namespace OTeaching.Instructor
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select ex.ExamName,ex.ExamDescription,ex.ExamDate,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Instructor i join InstructorCourse ic on ic.InstructorID=i.InstructorID join ClassCourse cc on cc.InstructorCourseID=ic.InstructorCourseID join Exam ex on ex.ClassCourseID=cc.ClassCourseID where i.InstructorID='"+Session["InstructorID"]+"'";
+            cmd.CommandText = "Select ex.ExamID,ex.ExamName,ex.ExamDescription,ex.ExamDate,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Instructor i join InstructorCourse ic on ic.InstructorID=i.InstructorID join ClassCourse cc on cc.InstructorCourseID=ic.InstructorCourseID join Exam ex on ex.ClassCourseID=cc.ClassCourseID where i.InstructorID='"+Session["InstructorID"]+"'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -37,38 +37,46 @@ namespace OTeaching.Instructor
         {
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
-            SqlCommand sqlCmd = new SqlCommand("ExamCreateOrUpdate", sqlCon);
-            sqlCmd.CommandType = CommandType.StoredProcedure;
-            sqlCmd.Parameters.AddWithValue("@ExamID", (hfExamID.Value == "" ? 0 : Convert.ToInt32(hfExamID.Value)));
-            sqlCmd.Parameters.AddWithValue("@ExamName", txt_examname.Text);
-            sqlCmd.Parameters.AddWithValue("@ExamDescription", txt_examdis.Text);
-            sqlCmd.Parameters.AddWithValue("@ExamDate", txt_examdate.Text);
-            sqlCmd.Parameters.AddWithValue("@ExamDuration", txt_examduration.Text);
-            sqlCmd.Parameters.AddWithValue("@ExamMarks", txt_exammatotalmarks.Text);
-            sqlCmd.Parameters.AddWithValue("@ClassCourseID", Session["classcourseid"].ToString());
-            sqlCmd.Parameters.AddWithValue("@ExamPassingMarks", txt_exampassmarks.Text);
-            sqlCmd.ExecuteNonQuery();
-            sqlCon.Close();
-            Clear();
-            string ExamID = hfExamID.Value;
-            if (ExamID == "")
+            if(Convert.ToInt32(txt_exampassmarks.Text) > Convert.ToInt32(txt_exammatotalmarks.Text))
             {
-                lbl_examaddwarning.Text = "Added Successfully";
-                FillGridView();
-                Clear();
+                lblErrormessage.Text = "Exam Passing Marks should be less than Total Marks.";
             }
             else
             {
-                lbl_examaddwarning.Text = "Updated Succesfully";
-                FillGridView();
+                SqlCommand sqlCmd = new SqlCommand("ExamCreateOrUpdate", sqlCon);
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                sqlCmd.Parameters.AddWithValue("@ExamID", (hfExamID.Value == "" ? 0 : Convert.ToInt32(hfExamID.Value)));
+                sqlCmd.Parameters.AddWithValue("@ExamName", txt_examname.Text);
+                sqlCmd.Parameters.AddWithValue("@ExamDescription", txt_examdis.Text);
+                sqlCmd.Parameters.AddWithValue("@ExamDate", txt_examdate.Text);
+                sqlCmd.Parameters.AddWithValue("@ExamDuration", txt_examduration.Text);
+                sqlCmd.Parameters.AddWithValue("@ExamMarks", txt_exammatotalmarks.Text);
+                sqlCmd.Parameters.AddWithValue("@ClassCourseID", Session["classcourseid"].ToString());
+                sqlCmd.Parameters.AddWithValue("@ExamPassingMarks", txt_exampassmarks.Text);
+                sqlCmd.ExecuteNonQuery();
+                sqlCon.Close();
                 Clear();
-            }
+                string ExamID = hfExamID.Value;
+                if (ExamID == "")
+                {
+                    lblSuccessMessage.Text = "Added Successfully";
+                    FillGridView();
+                    Clear();
+                }
+                else
+                {
+                    lblErrormessage.Text = "Updated Succesfully";
+                    FillGridView();
+                    Clear();
+                }
+            }           
         }
         public void Clear()
         {
             hfExamID.Value = "";
             txt_examname.Text = txt_examdis.Text = txt_examdate.Text = txt_examduration.Text = txt_exammatotalmarks.Text = txt_exampassmarks.Text = " ";
-            lbl_examaddwarning.Text = " ";
+            lblSuccessMessage.Text = " ";
+            lblErrormessage.Text = " ";
             btn_addexam.Text = "Add Exam";
             btnDelete.Enabled = false;
         }
@@ -107,9 +115,11 @@ namespace OTeaching.Instructor
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
+            SqlCommand cmd1 = new SqlCommand("Delete from CourseTest where ExamID='"+hfExamID.Value+"'", sqlCon);
+            cmd1.ExecuteNonQuery();
             cmd.CommandText = "Delete from Exam where ExamID='" + hfExamID.Value + "'";
             cmd.ExecuteNonQuery();
-            lbl_examaddwarning.Text = "Deleted Successfully";
+            lblSuccessMessage.Text = "Deleted Successfully";
             FillGridView();
             Clear();
         }

@@ -158,7 +158,6 @@
 .mGrid .pgr a { color: #666; text-decoration: none; }
 .mGrid .pgr a:hover { color: #000; text-decoration: none; }
         </style>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </form>
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

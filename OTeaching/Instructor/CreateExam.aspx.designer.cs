@@ -148,22 +148,22 @@ namespace OTeaching.Instructor {
         protected global::System.Web.UI.WebControls.Button btnClear;
         
         /// <summary>
-        /// panel_addexam_warning control.
+        /// lblSuccessMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_addexam_warning;
+        protected global::System.Web.UI.WebControls.Label lblSuccessMessage;
         
         /// <summary>
-        /// lbl_examaddwarning control.
+        /// lblErrormessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_examaddwarning;
+        protected global::System.Web.UI.WebControls.Label lblErrormessage;
         
         /// <summary>
         /// panel_examlist control.

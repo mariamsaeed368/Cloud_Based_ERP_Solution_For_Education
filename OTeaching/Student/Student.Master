@@ -52,7 +52,7 @@
         <a class="nav-link" href="StudentResult.aspx">Results</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="~/Default.aspx">Logout</a>
+        <a class="nav-link" href="../Default.aspx">Logout</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

@@ -22,6 +22,11 @@
                             <asp:LinkButton ID="lnkcreateexam" runat="server" Text="Create Exam" CommandArgument='<%# Eval("ClassCourseID")%>' OnClick="lnkcreateexam_OnClick" />
                         </ItemTemplate>
                     </asp:TemplateField>
+                     <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:LinkButton ID="lnkattendence" runat="server" CommandArgument='<%# Eval("ClassCourseID")%>' Text="Take Attendence" OnClick="lnkattendence_OnClick" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
                  <style>

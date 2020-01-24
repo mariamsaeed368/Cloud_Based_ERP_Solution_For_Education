@@ -40,6 +40,11 @@ namespace OTeaching.Instructor
             Session["classcourseid"] = id;
             Response.Redirect("CreateExam.aspx");
         }
-
+        protected void lnkattendence_OnClick(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["classcourseid"] = id;
+            Response.Redirect("Attendence.aspx");
+        }
     }
 }

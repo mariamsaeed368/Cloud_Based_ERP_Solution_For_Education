@@ -18,7 +18,7 @@ namespace OTeaching.Student
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select ex.ExamID,ex.ExamName,ex.ExamDescription,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Exam ex Join ClassCourse c on ex.ClassCourseID=c.ClassCourseID join Class cl on cl.ClassID=c.ClassID join Enrollment e on e.ClassID=cl.ClassID join StudentRegistration sr on sr.RegistrationID=e.RegistrationID";
+            cmd.CommandText = "Select ex.ExamID,ex.ExamName,ex.ExamDescription,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Exam ex Join ClassCourse c on ex.ClassCourseID=c.ClassCourseID join Class cl on cl.ClassID=c.ClassID";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -35,7 +35,9 @@ namespace OTeaching.Student
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select Count(s.RegistrationNo) from StudentRegistration s join Enrollment e on e.RegistrationID=s.RegistrationID join Class c on c.ClassID=e.ClassID join ClassCourse cc on cc.ClassID=c.ClassID join Exam ex on ex.ClassCourseID=cc.ClassCourseID join Result r on r.ExamID=ex.ExamID";
+            cmd.CommandType = CommandType.Text;
+            string registration_no = Session["Registration_No"].ToString();
+            cmd.CommandText = "Select Count(*) from Result where RegistrationNo='"+registration_no+"'";
             int check = Convert.ToInt32(cmd.ExecuteScalar());
             if(check < 1)
             {

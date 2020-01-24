@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Instructor/Instructor.Master" AutoEventWireup="true" CodeBehind="CreateExam.aspx.cs" Inherits="OTeaching.Instructor.CreateExam" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Instructor/Instructor.Master" AutoEventWireup="true" CodeBehind="CreateExam.aspx.cs" Inherits="OTeaching.Instructor.CreateExam" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
      <div class="col-md-12">
         <div class="card">
@@ -52,12 +53,20 @@
                             <asp:Button ID="btnDelete" runat="server" OnClientClick="return confirm('Are you sure?');" Text="Delete" CssClass="btn btn-danger" style="font-family: Arial; height: 39px;" OnClick="btnDelete_Click"/>
                             <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="btn btn-secondary" style="font-family: Arial" OnClick="btnClear_Click"  />  
                         </div>
-                        <asp:Panel ID="panel_addexam_warning" runat="server" Visible="false">
-                            <br />
-                            <div class="alert alert-danger text-center">
-                                <asp:Label ID="lbl_examaddwarning" runat="server" />
-                            </div>
-                        </asp:Panel>
+                         <table>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblSuccessMessage" runat="server" Text="" ForeColor="Green"></asp:Label>    
+                    </td> 
+                </tr>
+                <tr>
+                    <td>   
+                    </td>
+                    <td colspan="2">
+                        <asp:Label ID="lblErrormessage" runat="server" Text="" ForeColor="Red"></asp:Label>
+                    </td>     
+                </tr>
+            </table>
                     </div>
                 </div>
             </asp:Panel>

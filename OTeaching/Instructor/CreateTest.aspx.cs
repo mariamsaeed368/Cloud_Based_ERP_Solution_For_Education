@@ -53,13 +53,13 @@ namespace OTeaching.Instructor
             string ExamID = hfQuestionID.Value;
             if (ExamID == "")
             {
-                lbl_addquestionwarning.Text = "Added Successfully";
+                lblSuccessMessage.Text = "Added Successfully";
                 FillGridView();
                 Clear();
             }
             else
             {
-                lbl_addquestionwarning.Text = "Updated Succesfully";
+                lblSuccessMessage.Text = "Updated Succesfully";
                 FillGridView();
                 Clear();
             }
@@ -68,7 +68,8 @@ namespace OTeaching.Instructor
         {
             hfQuestionID.Value = "";
             txt_questionname.Text = txt_optionone.Text = txt_optiontwo.Text = txt_optionthree.Text = txt_optionfour.Text = " ";
-            lbl_addquestionwarning.Text = " ";
+            lblSuccessMessage.Text = " ";
+            lblErrormessage.Text = " ";
             btn_addquestion.Text = "Add Question";
             btnDelete.Enabled = false;
         }
@@ -103,7 +104,7 @@ namespace OTeaching.Instructor
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "Delete from CourseTest where QuestionID='" + hfQuestionID.Value + "'";
             cmd.ExecuteNonQuery();
-            lbl_addquestionwarning.Text = "Deleted Successfully";
+            lblSuccessMessage.Text = "Deleted Successfully";
             FillGridView();
             Clear();
         }
