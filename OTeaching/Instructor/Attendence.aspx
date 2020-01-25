@@ -10,7 +10,7 @@
           <br />
             <h3><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h3>
           <hr/>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  GridLines="None" AllowPaging="True" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowCancelingEdit="GridView1_RowCancelingEdit1">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  GridLines="None" AllowPaging="True" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowCancelingEdit="GridView1_RowCancelingEdit1" OnPageIndexChanging="GridView1_PageIndexChanging">
                     <AlternatingRowStyle CssClass="alt" />
                     <Columns>
                     <asp:TemplateField HeaderText="Registration ID.">  

@@ -15,8 +15,11 @@ namespace OTeaching.Instructor
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtClassCourseID.Text = Session["classcourseid"].ToString();
-            FillGridView();
+            if(!IsPostBack)
+            {
+                txtClassCourseID.Text = Session["classcourseid"].ToString();
+                FillGridView();
+            }           
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
@@ -85,6 +88,12 @@ namespace OTeaching.Instructor
                 lblErrormessage.Text = "This file does not exists ";
                 FillGridView();
             }
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

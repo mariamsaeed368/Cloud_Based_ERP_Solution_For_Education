@@ -117,6 +117,10 @@ namespace OTeaching.Admin
             cmd8.CommandType = CommandType.Text;
             cmd8.CommandText = "Delete from Result where ExamID='" + examid + "'";
             cmd8.ExecuteNonQuery();
+            SqlCommand cmd11 = sqlCon.CreateCommand();
+            cmd11.CommandType = CommandType.Text;
+            cmd11.CommandText = "Delete from CourseTest where ExamID='" + examid + "'";
+            cmd11.ExecuteNonQuery();
             SqlCommand cmd5 = sqlCon.CreateCommand();
             cmd5.CommandType = CommandType.Text;
             cmd5.CommandText = "Delete from Exam where ClassCourseID='" + id + "'";
@@ -161,6 +165,12 @@ namespace OTeaching.Admin
             int courseid = Convert.ToInt32((sender as LinkButton).CommandArgument);
             Session["courseid"] = courseid;
             Response.Redirect("InstructorCourse.aspx");
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

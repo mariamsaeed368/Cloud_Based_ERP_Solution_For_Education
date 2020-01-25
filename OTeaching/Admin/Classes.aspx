@@ -121,7 +121,7 @@
                 </tr>
             </table>
             <hr />
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="ClassName" HeaderText="Class Name"/>
                     <asp:BoundField DataField="StartTiming" HeaderText="Start Timing"/>

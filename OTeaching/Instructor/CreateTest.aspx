@@ -71,7 +71,7 @@
                 <div class="card text-center mb-3">
                     <div class="card-body">
                         <div class="table-responsive">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="Question" HeaderText="Question"/>
                     <asp:BoundField DataField="Option1" HeaderText="Option A"/>

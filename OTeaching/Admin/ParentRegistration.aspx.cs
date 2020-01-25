@@ -239,5 +239,11 @@ namespace OTeaching.Admin
                     lblMsg.Text = ex.Message;
                 }
         }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
+        }
     }
 }

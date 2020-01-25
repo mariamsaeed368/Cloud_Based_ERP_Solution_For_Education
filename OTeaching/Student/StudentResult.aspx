@@ -6,7 +6,7 @@
         <hr/>
     </div>
     <asp:TextBox ID="getstringuser" runat="server" Visible ="false"></asp:TextBox>
-    <asp:GridView ID="gridmyresult" runat="server" GridLines="None" AllowPaging="True" AutoGenerateColumns="False" CssClass="mGrid">
+    <asp:GridView ID="gridmyresult" runat="server" GridLines="None" AllowPaging="True" AutoGenerateColumns="False" CssClass="mGrid" OnPageIndexChanging="gridmyresult_PageIndexChanging">
         <Columns>
             <asp:BoundField DataField="ExamName" HeaderText="Exam Name" NullDisplayText="no exam name"/>
             <asp:BoundField DataField="ExamDuration" HeaderText="Exam Duration" />

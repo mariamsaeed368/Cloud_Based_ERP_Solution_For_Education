@@ -1,4 +1,5 @@
 ﻿
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Courses.aspx.cs" Inherits="OTeaching.Admin.Courses" %>
 
 <!DOCTYPE html>
@@ -113,7 +114,7 @@
                 </tr>
             </table>
             <hr />
-             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="CourseName" HeaderText="Course Name"/>
                     <asp:BoundField DataField="CourseNo" HeaderText="Course No."/>

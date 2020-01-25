@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ParentRegistration.aspx.cs" Inherits="OTeaching.Admin.ParentRegistration" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ParentRegistration.aspx.cs" Inherits="OTeaching.Admin.ParentRegistration" %>
 
 <!DOCTYPE html>
 
@@ -123,7 +124,7 @@
              <div class="col-xs-11">
                 <asp:Label ID="lblMsg" runat="server" CssClass="text-danger"></asp:Label>
             </div>
-             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                   <Columns>
                     <asp:BoundField DataField="Name" HeaderText="Name"/>
                     <asp:BoundField DataField="Address" HeaderText="Address"/>

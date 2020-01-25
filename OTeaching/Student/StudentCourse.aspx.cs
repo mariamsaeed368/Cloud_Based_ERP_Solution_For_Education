@@ -14,6 +14,13 @@ namespace OTeaching.Student
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                FillGridView();
+            }
+        }
+        void FillGridView()
+        {
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
             SqlCommand cmd = sqlCon.CreateCommand();
@@ -35,5 +42,10 @@ namespace OTeaching.Student
             Response.Redirect("DownloadCourseMaterial.aspx");
         }
 
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿
 
+
 <%@ Page Title="" Language="C#" MasterPageFile="~/Student/Student.Master" AutoEventWireup="true" CodeBehind="StudentCourse.aspx.cs" Inherits="OTeaching.Student.StudentCourse" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
     <form id="form1" runat="server">
@@ -8,7 +9,7 @@
           <br />
             <h2>Enrolled Courses</h2>
           <hr/>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="CourseName" HeaderText="Course Name"/>
                     <asp:BoundField DataField="Instructor_Name" HeaderText="Instructor's Name"/>

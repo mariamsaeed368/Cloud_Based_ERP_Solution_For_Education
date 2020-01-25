@@ -7,7 +7,7 @@
             <h2>Available Tests</h2>
           <hr/>
             <b><asp:Label ID="lblmessage" runat="server"></asp:Label></b> 
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="ExamName" HeaderText="Exam Name"/>
                     <asp:BoundField DataField="ExamDescription" HeaderText="Exam Description"/>

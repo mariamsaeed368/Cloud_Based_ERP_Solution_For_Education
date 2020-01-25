@@ -156,6 +156,12 @@ namespace OTeaching.Admin
         {
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
+            SqlCommand cmd1 = new SqlCommand("Delete from Attendence where ClassCourseID='"+hfClassCourseID.Value+"'", sqlCon);
+            cmd1.ExecuteNonQuery();
+            SqlCommand cmd2 = new SqlCommand("Delete from CourseMaterial where ClassCourseID='" + hfClassCourseID.Value + "'", sqlCon);
+            cmd2.ExecuteNonQuery();
+            SqlCommand cmd3 = new SqlCommand("Delete from Exam where ClassCourseID='" + hfClassCourseID.Value + "'", sqlCon);
+            cmd3.ExecuteNonQuery();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "Delete from ClassCourse where ClassCourseID='" + hfClassCourseID.Value + "'";
@@ -163,6 +169,12 @@ namespace OTeaching.Admin
             lblSuccessMessage.Text = "Deleted Successfully";
             FillGridView();
             Clear();
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

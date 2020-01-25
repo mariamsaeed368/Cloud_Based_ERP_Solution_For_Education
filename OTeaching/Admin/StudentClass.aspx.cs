@@ -46,7 +46,7 @@ namespace OTeaching.Admin
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand("Select RegistrationID from StudentRegistration where RegistrationNo='"+ddlregistration.Text+"'", sqlCon);
             int id= (int) cmd.ExecuteScalar();
-            SqlCommand cmd1 = new SqlCommand("Select Count(*) from Enrollment where RegistrationID='"+id+"'", sqlCon);
+            SqlCommand cmd1 = new SqlCommand("Select Count(*) from Enrollment where RegistrationID='"+id+"' AND AssignedOn='"+ Convert.ToDateTime(txtAssignment.Text) + "'", sqlCon);
             int check = (int)cmd1.ExecuteScalar();
             if( check < 1 )
             {
@@ -148,6 +148,12 @@ namespace OTeaching.Admin
             lblSuccessMessage.Text = "Deleted Successfully";
             FillGridView();
             Clear();
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

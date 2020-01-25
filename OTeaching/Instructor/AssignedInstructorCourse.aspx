@@ -6,7 +6,7 @@
           <br />
             <h2>Assigned Courses</h2>
           <hr/>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"  GridLines="None" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" OnPageIndexChanging="GridView1_PageIndexChanging">
                 <Columns>
                     <asp:BoundField DataField="CourseName" HeaderText="Course Name"/>
                     <asp:BoundField DataField="Instructor_Name" HeaderText="Instructor's Name"/>

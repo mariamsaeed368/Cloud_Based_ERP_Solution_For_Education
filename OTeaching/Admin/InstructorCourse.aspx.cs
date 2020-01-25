@@ -69,7 +69,7 @@ namespace OTeaching.Admin
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand("Select InstructorID from Instructor where Username='" + ddlusername.Text + "'", sqlCon);
             int id = (int)cmd.ExecuteScalar();
-            SqlCommand cmd1 = new SqlCommand("Select Count(*) from InstructorCourse where InstructorID='" + id + "' AND CourseID='"+txtCourseID.Text+"'", sqlCon);
+            SqlCommand cmd1 = new SqlCommand("Select Count(*) from InstructorCourse where InstructorID='" + id + "' AND CourseID='"+txtCourseID.Text+"' AND AssignedOn='"+ Convert.ToDateTime(txtAssignment.Text) + "'", sqlCon);
             int check = (int)cmd1.ExecuteScalar();
             if (check < 1)
             {
@@ -137,6 +137,8 @@ namespace OTeaching.Admin
         {
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
+            SqlCommand cmd1 = new SqlCommand("Delete from ClassCourse where InstructorCourseID='"+hfInstructorCourseID+"'", sqlCon);
+            cmd1.ExecuteNonQuery();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "Delete from InstructorCourse where InstructorCourseID='" + hfInstructorCourseID.Value + "'";
@@ -144,6 +146,12 @@ namespace OTeaching.Admin
             lblSuccessMessage.Text = "Deleted Successfully";
             FillGridView();
             Clear();
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

@@ -14,8 +14,11 @@ namespace OTeaching.Instructor
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnDelete.Enabled = false;
-            FillGridView();
+            if(!IsPostBack)
+            {
+                btnDelete.Enabled = false;
+                FillGridView();
+            }            
         }
         void FillGridView()
         {
@@ -128,6 +131,12 @@ namespace OTeaching.Instructor
             int examid = Convert.ToInt32((sender as LinkButton).CommandArgument);
             Session["ExamID"] = examid;
             Response.Redirect("CreateTest.aspx");
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

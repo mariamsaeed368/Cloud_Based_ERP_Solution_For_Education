@@ -14,6 +14,13 @@ namespace OTeaching.Student
         SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                FillGridView();
+            }
+        }
+        void FillGridView()
+        {
             HttpCookie usercookie = Request.Cookies["user_cookies"];
             if (Session["Student_Username"] != null || usercookie != null)
             {
@@ -38,14 +45,20 @@ namespace OTeaching.Student
             string regno = cmd2.ExecuteScalar().ToString();
             SqlCommand cmd = sqlCon.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select e.ExamName,e.ExamDuration,e.ExamMarks,r.TotalQuestion,r.ResultScore,r.ResultStatus,r.RegistrationNo from Result r join Exam e on e.ExamID=r.ExamID where r.RegistrationNo='"+regno+"'";
+            cmd.CommandText = "Select e.ExamName,e.ExamDuration,e.ExamMarks,r.TotalQuestion,r.ResultScore,r.ResultStatus,r.RegistrationNo from Result r join Exam e on e.ExamID=r.ExamID where r.RegistrationNo='" + regno + "'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
-            gridmyresult .DataSource = dt;
+            gridmyresult.DataSource = dt;
             gridmyresult.DataBind();
             sqlCon.Close();
+        }
+
+        protected void gridmyresult_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gridmyresult.PageIndex = e.NewPageIndex;
+            FillGridView(); //bindgridview will get the data source and bind it again
         }
     }
 }

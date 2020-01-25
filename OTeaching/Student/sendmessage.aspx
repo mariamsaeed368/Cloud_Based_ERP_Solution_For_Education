@@ -10,8 +10,8 @@
                         <th>Instructor Username</th>
                         <th>Instructor Name</th>
                         <th>Class Name</th>
-                        <th>Section</th>
                         <th>Course Name</th>
+                        <th>Section</th>
                         <th>message</th>
                     </tr>
                 </thead>
@@ -26,10 +26,10 @@
                     <%#Eval("Name")%>
                 </td>
                 <td>
-                    <%#Eval("CourseName")%>
+                    <%#Eval("ClassName")%>
                 </td>
                 <td>
-                    <%#Eval("ClassName")%>
+                    <%#Eval("CourseName")%>
                 </td>
                 <td>
                     <%#Eval("Section")%>
