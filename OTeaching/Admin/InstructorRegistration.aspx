@@ -51,7 +51,7 @@
         <a class="nav-link" href="Courses.aspx">Courses</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Default.aspx">Logout</a>
+        <a class="nav-link" href="../Default.aspx">Logout</a>
       </li>
     </ul>
     </nav>
@@ -73,7 +73,7 @@
              <div class="form-group">
                  <asp:Label ID="mobile" runat="server" CssClass="col-md-2 control-label" Text="Mobile"></asp:Label>
                     <div class="col-md-3">
-                        <asp:TextBox ID="tbmobile" CssClass="form-control" runat="server" placeholder="Mobile"></asp:TextBox>
+                        <asp:TextBox onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" MaxLength="11" ID="tbmobile" CssClass="form-control" runat="server" placeholder="Mobile"></asp:TextBox>
                 </div>
             </div>
               <div class="form-group">

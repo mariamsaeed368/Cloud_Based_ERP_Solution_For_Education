@@ -1,4 +1,5 @@
 ﻿
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentClass.aspx.cs" Inherits="OTeaching.Admin.StudentClass" %>
 
 <!DOCTYPE html>
@@ -51,7 +52,7 @@
         <a class="nav-link" href="Courses.aspx">Courses</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="Default.aspx">Logout</a>
+        <a class="nav-link" href="../Default.aspx">Logout</a>
       </li>
     </ul>
     </nav>

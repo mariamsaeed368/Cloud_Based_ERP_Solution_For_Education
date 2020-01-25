@@ -16,9 +16,11 @@ namespace OTeaching.Student
         {
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
-            SqlCommand cmd = sqlCon.CreateCommand();
+            SqlCommand cmd1 = new SqlCommand("Select RegistrationID from StudentRegistration where Username='" + Session["Student_Username"] + "'", sqlCon);
+            int regid = (int)cmd1.ExecuteScalar();
+            SqlCommand cmd = sqlCon.CreateCommand(); 
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select ex.ExamID,ex.ExamName,ex.ExamDescription,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Exam ex Join ClassCourse c on ex.ClassCourseID=c.ClassCourseID join Class cl on cl.ClassID=c.ClassID";
+            cmd.CommandText = "Select ex.ExamID,ex.ExamName,ex.ExamDescription,ex.ExamDuration,ex.ExamMarks,ex.ExamPassingMarks from Exam ex Join ClassCourse c on ex.ClassCourseID=c.ClassCourseID join Class cl on cl.ClassID=c.ClassID join Enrollment e on e.ClassID=cl.ClassID join StudentRegistration sr on sr.RegistrationID=e.RegistrationID where sr.RegistrationID='"+regid+"'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);

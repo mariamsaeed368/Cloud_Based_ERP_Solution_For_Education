@@ -1,4 +1,5 @@
 ﻿
+
 <%@ Page Title="" Language="C#" MasterPageFile="~/Student/Student.Master" AutoEventWireup="true" CodeBehind="StudentCourse.aspx.cs" Inherits="OTeaching.Student.StudentCourse" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
     <form id="form1" runat="server">
