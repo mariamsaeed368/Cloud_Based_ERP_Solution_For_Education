@@ -141,7 +141,7 @@
                     </asp:TemplateField>
                        <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="lnkrelationwithstudent" runat="server" CommandArgument='<%# Eval("GaurdianID")%>'>Relation With Student</asp:LinkButton>
+                            <asp:LinkButton ID="lnkrelationwithstudent" runat="server" CommandArgument='<%# Eval("GaurdianID")%>' OnClick="lnkrelationwithstudent_OnClick">Relation With Student</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

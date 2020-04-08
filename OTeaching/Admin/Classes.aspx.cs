@@ -115,6 +115,12 @@ namespace OTeaching.Admin
 
 
         }
+        protected void lnkfee_OnClick(object sender, EventArgs e)
+        {
+            int classid = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["classid"] = classid;
+            Response.Redirect("Fee.aspx");
+        }
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             if (sqlCon.State == ConnectionState.Closed)

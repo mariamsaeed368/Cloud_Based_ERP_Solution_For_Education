@@ -137,6 +137,11 @@
                             <asp:LinkButton ID="lnkenrollment" CommandArgument='<%# Eval("ClassID") + "~" + Eval("Section")%>' runat="server" Text="Enrollment" OnClick="lnkenrollment_OnClick" />
                         </ItemTemplate>
                     </asp:TemplateField>
+                     <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:LinkButton ID="lnkfee" CommandArgument='<%# Eval("ClassID")%>' runat="server" Text="Fee" OnClick="lnkfee_OnClick" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
                  <style>

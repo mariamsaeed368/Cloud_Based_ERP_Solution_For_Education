@@ -75,8 +75,11 @@
     <Content Include="Admin\css\font-awesome.min.css" />
     <Content Include="Admin\css\owl.carousel.css" />
     <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\Fee.aspx" />
     <Content Include="Admin\icon-fonts\fontawesome-webfont.svg" />
     <Content Include="Admin\InstructorCourse.aspx" />
+    <Content Include="Admin\StudentParentRelationship.aspx" />
+    <Content Include="Admin\TakeFee.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Instructor\AssignedInstructorCourse.aspx" />
     <Content Include="Instructor\Attendence.aspx" />
@@ -195,6 +198,59 @@
     <Content Include="Instructor\js\mixitup.min.js" />
     <Content Include="Instructor\js\owl.carousel.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Parent\css\bootstrap.min.css" />
+    <Content Include="Parent\css\font-awesome.min.css" />
+    <Content Include="Parent\css\owl.carousel.css" />
+    <Content Include="Parent\css\style.css" />
+    <Content Include="Parent\FeeStatus.aspx" />
+    <Content Include="Parent\icon-fonts\fontawesome-webfont.svg" />
+    <Content Include="Parent\img\add.jpg" />
+    <Content Include="Parent\img\authors\1.jpg" />
+    <Content Include="Parent\img\authors\2.jpg" />
+    <Content Include="Parent\img\authors\3.jpg" />
+    <Content Include="Parent\img\authors\4.jpg" />
+    <Content Include="Parent\img\authors\5.jpg" />
+    <Content Include="Parent\img\authors\6.jpg" />
+    <Content Include="Parent\img\authors\7.jpg" />
+    <Content Include="Parent\img\authors\8.jpg" />
+    <Content Include="Parent\img\bg.jpg" />
+    <Content Include="Parent\img\blog\1.jpg" />
+    <Content Include="Parent\img\blog\2.jpg" />
+    <Content Include="Parent\img\blog\3.jpg" />
+    <Content Include="Parent\img\categories\1.jpg" />
+    <Content Include="Parent\img\categories\2.jpg" />
+    <Content Include="Parent\img\categories\3.jpg" />
+    <Content Include="Parent\img\categories\4.jpg" />
+    <Content Include="Parent\img\categories\5.jpg" />
+    <Content Include="Parent\img\categories\6.jpg" />
+    <Content Include="Parent\img\courses\1.jpg" />
+    <Content Include="Parent\img\courses\2.jpg" />
+    <Content Include="Parent\img\courses\3.jpg" />
+    <Content Include="Parent\img\courses\4.jpg" />
+    <Content Include="Parent\img\courses\5.jpg" />
+    <Content Include="Parent\img\courses\6.jpg" />
+    <Content Include="Parent\img\courses\7.jpg" />
+    <Content Include="Parent\img\courses\8.jpg" />
+    <Content Include="Parent\img\courses\f-1.jpg" />
+    <Content Include="Parent\img\courses\f-2.jpg" />
+    <Content Include="Parent\img\courses\single.jpg" />
+    <Content Include="Parent\img\favicon.ico" />
+    <Content Include="Parent\img\login.png" />
+    <Content Include="Parent\img\logo.png" />
+    <Content Include="Parent\img\page-bg\1.jpg" />
+    <Content Include="Parent\img\page-bg\2.jpg" />
+    <Content Include="Parent\img\page-bg\3.jpg" />
+    <Content Include="Parent\img\page-bg\4.jpg" />
+    <Content Include="Parent\img\page-bg\5.jpg" />
+    <Content Include="Parent\img\page-top-bg.jpg" />
+    <Content Include="Parent\img\signup-bg.jpg" />
+    <Content Include="Parent\js\bootstrap.min.js" />
+    <Content Include="Parent\js\circle-progress.min.js" />
+    <Content Include="Parent\js\jquery-3.2.1.min.js" />
+    <Content Include="Parent\js\main.js" />
+    <Content Include="Parent\js\map.js" />
+    <Content Include="Parent\js\mixitup.min.js" />
+    <Content Include="Parent\js\owl.carousel.min.js" />
     <Content Include="Registration.aspx" />
     <Content Include="ResetPassword.aspx" />
     <Content Include="StudentLogin.aspx" />
@@ -292,12 +348,33 @@
     <Compile Include="Admin\Courses.aspx.designer.cs">
       <DependentUpon>Courses.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Fee.aspx.cs">
+      <DependentUpon>Fee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Fee.aspx.designer.cs">
+      <DependentUpon>Fee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\InstructorCourse.aspx.cs">
       <DependentUpon>InstructorCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\InstructorCourse.aspx.designer.cs">
       <DependentUpon>InstructorCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentParentRelationship.aspx.cs">
+      <DependentUpon>StudentParentRelationship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentParentRelationship.aspx.designer.cs">
+      <DependentUpon>StudentParentRelationship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TakeFee.aspx.cs">
+      <DependentUpon>TakeFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TakeFee.aspx.designer.cs">
+      <DependentUpon>TakeFee.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
@@ -435,6 +512,20 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Parent\FeeStatus.aspx.cs">
+      <DependentUpon>FeeStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\FeeStatus.aspx.designer.cs">
+      <DependentUpon>FeeStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\Parent.Master.cs">
+      <DependentUpon>Parent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\Parent.Master.designer.cs">
+      <DependentUpon>Parent.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -564,6 +655,13 @@
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.woff2" />
     <Content Include="Student\Student.Master" />
+    <Content Include="Parent\fonts\Futura.woff" />
+    <Content Include="Parent\fonts\Futura1.woff" />
+    <Content Include="Parent\fonts\WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf" />
+    <Content Include="Parent\icon-fonts\fontawesome-webfont.eot" />
+    <Content Include="Parent\icon-fonts\fontawesome-webfont.woff" />
+    <Content Include="Parent\icon-fonts\fontawesome-webfont.woff2" />
+    <Content Include="Parent\Parent.Master" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

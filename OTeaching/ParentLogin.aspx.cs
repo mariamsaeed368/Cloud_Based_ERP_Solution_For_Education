@@ -52,7 +52,10 @@ namespace OTeaching
                         Response.Cookies["PWD"].Expires = DateTime.Now.AddDays(-1);
                     }
                     Session["EMAIL"] = tbemail.Text;
-                    // Response.Redirect("~/UserHome.aspx");
+                    SqlCommand cmd1 = new SqlCommand("Select GaurdianID from Gaurdian where Email='" + tbemail.Text + "'", con);
+                    string id = cmd1.ExecuteScalar().ToString();
+                    Session["GaurdianID"] = id;
+                    Response.Redirect("~/Parent/FeeStatus.aspx");
                 }
                 else
                 {

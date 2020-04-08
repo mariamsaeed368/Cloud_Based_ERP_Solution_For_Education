@@ -211,6 +211,12 @@ namespace OTeaching.Admin
                     lblMsg.Text = ex.Message;
                 }
         }
+        protected void lnkrelationwithstudent_OnClick(object sender, EventArgs e)
+        {
+            int gaurdianid = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            Session["gaurdianid"] = gaurdianid;
+            Response.Redirect("StudentParentRelationship.aspx");
+        }
 
         protected void btnClear_Click(object sender, EventArgs e)
         {
