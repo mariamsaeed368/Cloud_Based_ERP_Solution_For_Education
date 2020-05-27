@@ -11,7 +11,7 @@ namespace OTeaching.Student
 {
     public partial class StartTest : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
+        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie usercookie = Request.Cookies["user_cookies"];

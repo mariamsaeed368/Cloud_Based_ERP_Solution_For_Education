@@ -12,7 +12,7 @@ namespace OTeaching.Instructor
 {
     public partial class Attendence : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -37,7 +37,7 @@ namespace OTeaching.Instructor
             GridView1.DataBind();
             sqlCon.Close();
         }
-        public string status1;
+        public int status1;
         protected void btnAdd_Click(object sender, EventArgs e)
         {
 
@@ -55,18 +55,18 @@ namespace OTeaching.Instructor
                 RadioButton rbtn3 = (row.Cells[6].FindControl("RadioButton3") as RadioButton);
                 if (rbtn1.Checked)
                 {
-                    status1 = "Present";
+                    status1 = 1;
 
                 }
                 else if(rbtn2.Checked)
                 {
-                    status1 = "Absent";
+                    status1 = 2;
                 }
                 else
                 {
-                    status1 = "Leave";
+                    status1 = 2;
                 }
-                SqlCommand cmd1 = new SqlCommand("Select Count(*) from Attendence where RegistrationID='"+regno.Text+"'", sqlCon);
+                SqlCommand cmd1 = new SqlCommand("Select Count(*) from Attendence where RegistrationID='"+regno.Text+"' and Date='"+Convert.ToDateTime(dateofclass1)+"' and ClassCourseID='"+classcourseid+"'", sqlCon);
                 int check = (int)cmd1.ExecuteScalar();
                 if(check < 1)
                 {
@@ -75,12 +75,12 @@ namespace OTeaching.Instructor
                     cmd.CommandText = query;
                     cmd.Connection = sqlCon;
                     cmd.ExecuteNonQuery();
+                    Label2.Text = "Attendance Has Been Saved Successfully";
                 }
                 else
                 {
                     Label2.Text = "Attendence is already stored in Database.";
                 }
-                Label2.Text = "Attendance Has Been Saved Successfully";
             }
         }
         protected void GridView1_RowEditing(object sender, System.Web.UI.WebControls.GridViewEditEventArgs e)
@@ -101,16 +101,16 @@ namespace OTeaching.Instructor
             RadioButton rbtn3 = (GridView1.Rows[e.RowIndex].FindControl("RadioButton3") as RadioButton);
             if (rbtn1.Checked)
             {
-                status1 = "Present";
+                status1 = 1;
 
             }
             else if (rbtn2.Checked)
             {
-                status1 = "Absent";
+                status1 = 2;
             }
             else
             {
-                status1 = "Leave";
+                status1 = 2;
             }
             //updating the record  
             SqlCommand cmd = new SqlCommand("Update Attendence set Status='" + status1 + "' where ClassCourseID='" + classcourseid+"' AND RegistrationID='"+registrationid.Text+"'", sqlCon);

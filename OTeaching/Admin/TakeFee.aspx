@@ -1,6 +1,4 @@
-﻿
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TakeFee.aspx.cs" Inherits="OTeaching.Admin.TakeFee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TakeFee.aspx.cs" Inherits="OTeaching.Admin.TakeFee" %>
 
 <!DOCTYPE html>
 

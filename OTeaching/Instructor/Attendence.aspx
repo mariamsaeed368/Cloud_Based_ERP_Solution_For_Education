@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Instructor/Instructor.Master" AutoEventWireup="true" CodeBehind="Attendence.aspx.cs" Inherits="OTeaching.Instructor.Attendence" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Instructor/Instructor.Master" AutoEventWireup="true" CodeBehind="Attendence.aspx.cs" Inherits="OTeaching.Instructor.Attendence" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
     <div class="col-md-12">
         <div class="card">

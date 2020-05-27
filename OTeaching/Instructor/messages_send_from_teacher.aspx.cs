@@ -11,7 +11,7 @@ namespace OTeaching.Instructor
 {
     public partial class messages_send_from_teacher : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
         string username = " ";
         string message = " ";
         string instructorusername = " ";

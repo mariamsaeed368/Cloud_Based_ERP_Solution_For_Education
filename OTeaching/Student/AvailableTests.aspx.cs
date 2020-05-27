@@ -11,7 +11,7 @@ namespace OTeaching.Student
 {
     public partial class AvailableTests : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)

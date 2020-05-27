@@ -40,7 +40,10 @@
         <a class="nav-link" href="FeeStatus.aspx">Fee Status</a>
       </li>
          <li class="nav-item">
-        <a class="nav-link" href="#">Results</a>
+        <a class="nav-link" href="StudentParentResult.aspx">Results</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="ParentReports.aspx">Reports</a>
       </li>
          <li class="nav-item">
         <a class="nav-link" href="../Default.aspx">Logout</a>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetParentAttendenceReport" targetNamespace="http://tempuri.org/DataSetParentAttendenceReport.xsd" xmlns:mstns="http://tempuri.org/DataSetParentAttendenceReport.xsd" xmlns="http://tempuri.org/DataSetParentAttendenceReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetParentAttendenceReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetParentAttendenceReport" msprop:Generator_UserDSName="DataSetParentAttendenceReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegistrationID" msprop:Generator_ColumnVarNameInTable="columnRegistrationID" msprop:Generator_ColumnPropNameInRow="RegistrationID" msprop:Generator_ColumnPropNameInTable="RegistrationIDColumn" msprop:Generator_UserColumnName="RegistrationID" type="xs:string" minOccurs="0" />
+              <xs:element name="Course" msprop:Generator_ColumnVarNameInTable="columnCourse" msprop:Generator_ColumnPropNameInRow="Course" msprop:Generator_ColumnPropNameInTable="CourseColumn" msprop:Generator_UserColumnName="Course" type="xs:string" minOccurs="0" />
+              <xs:element name="Instructor" msprop:Generator_ColumnVarNameInTable="columnInstructor" msprop:Generator_ColumnPropNameInRow="Instructor" msprop:Generator_ColumnPropNameInTable="InstructorColumn" msprop:Generator_UserColumnName="Instructor" type="xs:string" minOccurs="0" />
+              <xs:element name="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="AttendencePercentage" msprop:Generator_ColumnVarNameInTable="columnAttendencePercentage" msprop:Generator_ColumnPropNameInRow="AttendencePercentage" msprop:Generator_ColumnPropNameInTable="AttendencePercentageColumn" msprop:Generator_UserColumnName="AttendencePercentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

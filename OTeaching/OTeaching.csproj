@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OTeaching</RootNamespace>
     <AssemblyName>OTeaching</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44315</IISExpressSSLPort>
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,22 +45,42 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -251,8 +272,26 @@
     <Content Include="Parent\js\map.js" />
     <Content Include="Parent\js\mixitup.min.js" />
     <Content Include="Parent\js\owl.carousel.min.js" />
+    <Content Include="Parent\ParentAttendenceReport.aspx" />
+    <Content Include="Parent\ParentEnrolledCourses.aspx" />
+    <Content Include="Parent\ParentReports.aspx" />
+    <Content Include="Parent\ParentResultReport.aspx" />
+    <Content Include="Parent\StudentParentResult.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ResetPassword.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="StudentLogin.aspx" />
     <Content Include="Student\AvailableTests.aspx" />
     <Content Include="Student\communication.aspx" />
@@ -261,6 +300,7 @@
     <Content Include="Student\css\owl.carousel.css" />
     <Content Include="Student\css\style.css" />
     <Content Include="Student\DownloadCourseMaterial.aspx" />
+    <Content Include="Student\EnrolledCoursesReport.aspx" />
     <Content Include="Student\icon-fonts\fontawesome-webfont.svg" />
     <Content Include="Student\img\add.jpg" />
     <Content Include="Student\img\authors\1.jpg" />
@@ -312,10 +352,13 @@
     <Content Include="Student\load_messages.aspx" />
     <Content Include="Student\load_new_messages.aspx" />
     <Content Include="Student\messages_send_from_student.aspx" />
+    <Content Include="Student\StudentAttendenceReport.aspx" />
+    <Content Include="Student\StudentReports.aspx" />
     <Content Include="Student\sendmessage.aspx" />
     <Content Include="Student\StartTest.aspx" />
     <Content Include="Student\StudentCourse.aspx" />
     <Content Include="Student\StudentResult.aspx" />
+    <Content Include="Student\StudentResultReport.aspx" />
     <Content Include="TeacherLogin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -382,6 +425,36 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetEnrolledCoursesReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetParentAttendenceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetParentAttendenceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetParentEnrolledCourses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetParentResultReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetParentResultReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetStudentAttendenceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetStudentAttendenceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDataSetStudentResultReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDataSetStudentResultReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="Instructor\AssignedInstructorCourse.aspx.cs">
       <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
@@ -460,6 +533,11 @@
     <Compile Include="Instructor\UploadCourseMaterial.aspx.designer.cs">
       <DependentUpon>UploadCourseMaterial.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginDBDataSetEnrolledCourses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBDataSetEnrolledCourses.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ParentLogin.aspx.cs">
       <DependentUpon>ParentLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -512,6 +590,21 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Parent\DataSetParentAttendenceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetParentAttendenceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\DataSetParentEnrolledCourses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\DataSetParentResultReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetParentResultReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Parent\FeeStatus.aspx.cs">
       <DependentUpon>FeeStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -525,6 +618,41 @@
     </Compile>
     <Compile Include="Parent\Parent.Master.designer.cs">
       <DependentUpon>Parent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\ParentAttendenceReport.aspx.cs">
+      <DependentUpon>ParentAttendenceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\ParentAttendenceReport.aspx.designer.cs">
+      <DependentUpon>ParentAttendenceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\ParentEnrolledCourses.aspx.cs">
+      <DependentUpon>ParentEnrolledCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\ParentEnrolledCourses.aspx.designer.cs">
+      <DependentUpon>ParentEnrolledCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\ParentReports.aspx.cs">
+      <DependentUpon>ParentReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\ParentReports.aspx.designer.cs">
+      <DependentUpon>ParentReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\ParentResultReport.aspx.cs">
+      <DependentUpon>ParentResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\ParentResultReport.aspx.designer.cs">
+      <DependentUpon>ParentResultReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parent\StudentParentResult.aspx.cs">
+      <DependentUpon>StudentParentResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parent\StudentParentResult.aspx.designer.cs">
+      <DependentUpon>StudentParentResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
@@ -541,6 +669,7 @@
     <Compile Include="ResetPassword.aspx.designer.cs">
       <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StudentLogin.aspx.cs">
       <DependentUpon>StudentLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -562,12 +691,34 @@
     <Compile Include="Student\communication.aspx.designer.cs">
       <DependentUpon>communication.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\DataSetAttendenceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAttendenceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student\DataSetEnrolledCoursesReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student\DataSetStudentResultReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStudentResultReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Student\DownloadCourseMaterial.aspx.cs">
       <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Student\DownloadCourseMaterial.aspx.designer.cs">
       <DependentUpon>DownloadCourseMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\EnrolledCoursesReport.aspx.cs">
+      <DependentUpon>EnrolledCoursesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\EnrolledCoursesReport.aspx.designer.cs">
+      <DependentUpon>EnrolledCoursesReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\load_messages.aspx.cs">
       <DependentUpon>load_messages.aspx</DependentUpon>
@@ -589,6 +740,20 @@
     </Compile>
     <Compile Include="Student\messages_send_from_student.aspx.designer.cs">
       <DependentUpon>messages_send_from_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentAttendenceReport.aspx.cs">
+      <DependentUpon>StudentAttendenceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentAttendenceReport.aspx.designer.cs">
+      <DependentUpon>StudentAttendenceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentReports.aspx.cs">
+      <DependentUpon>StudentReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentReports.aspx.designer.cs">
+      <DependentUpon>StudentReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\sendmessage.aspx.cs">
       <DependentUpon>sendmessage.aspx</DependentUpon>
@@ -625,6 +790,13 @@
     <Compile Include="Student\StudentResult.aspx.designer.cs">
       <DependentUpon>StudentResult.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Student\StudentResultReport.aspx.cs">
+      <DependentUpon>StudentResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentResultReport.aspx.designer.cs">
+      <DependentUpon>StudentResultReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TeacherLogin.aspx.cs">
       <DependentUpon>TeacherLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -647,6 +819,83 @@
     <Content Include="Instructor\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Instructor\icon-fonts\fontawesome-webfont.woff2" />
     <Content Include="Instructor\Instructor.Master" />
+    <Content Include="LoginDBDataSetEnrolledCourses.xsc">
+      <DependentUpon>LoginDBDataSetEnrolledCourses.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetStudentAttendenceReport.xsc">
+      <DependentUpon>DBDataSetStudentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetParentAttendenceReport.xsc">
+      <DependentUpon>DBDataSetParentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetEnrolledCoursesReport.xsc">
+      <DependentUpon>DBDataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetEnrolledCoursesReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetEnrolledCoursesReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetEnrolledCoursesReport.xss">
+      <DependentUpon>DBDataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetParentAttendenceReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetParentAttendenceReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetParentAttendenceReport.xss">
+      <DependentUpon>DBDataSetParentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetParentEnrolledCourses.xsc">
+      <DependentUpon>DBDataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetParentEnrolledCourses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetParentEnrolledCourses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetParentEnrolledCourses.xss">
+      <DependentUpon>DBDataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetParentResultReport.xsc">
+      <DependentUpon>DBDataSetParentResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetParentResultReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetParentResultReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetParentResultReport.xss">
+      <DependentUpon>DBDataSetParentResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetStudentAttendenceReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetStudentAttendenceReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetStudentAttendenceReport.xss">
+      <DependentUpon>DBDataSetStudentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="DBDataSetStudentResultReport.xsc">
+      <DependentUpon>DBDataSetStudentResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="DBDataSetStudentResultReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDataSetStudentResultReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DBDataSetStudentResultReport.xss">
+      <DependentUpon>DBDataSetStudentResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="LoginDBDataSetEnrolledCourses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDBDataSetEnrolledCourses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="LoginDBDataSetEnrolledCourses.xss">
+      <DependentUpon>LoginDBDataSetEnrolledCourses.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Student\fonts\Futura.woff" />
     <Content Include="Student\fonts\Futura1.woff" />
@@ -662,7 +911,73 @@
     <Content Include="Parent\icon-fonts\fontawesome-webfont.woff" />
     <Content Include="Parent\icon-fonts\fontawesome-webfont.woff2" />
     <Content Include="Parent\Parent.Master" />
+    <Content Include="Parent\DataSetParentAttendenceReport.xsc">
+      <DependentUpon>DataSetParentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Parent\DataSetParentAttendenceReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetParentAttendenceReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Parent\DataSetParentAttendenceReport.xss">
+      <DependentUpon>DataSetParentAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Parent\DataSetParentEnrolledCourses.xsc">
+      <DependentUpon>DataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Content>
+    <None Include="Parent\DataSetParentEnrolledCourses.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetParentEnrolledCourses.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Parent\DataSetParentEnrolledCourses.xss">
+      <DependentUpon>DataSetParentEnrolledCourses.xsd</DependentUpon>
+    </Content>
+    <Content Include="Parent\DataSetParentResultReport.xsc">
+      <DependentUpon>DataSetParentResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Parent\DataSetParentResultReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetParentResultReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Parent\DataSetParentResultReport.xss">
+      <DependentUpon>DataSetParentResultReport.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Student\DataSetAttendenceReport.xsc">
+      <DependentUpon>DataSetAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Student\DataSetAttendenceReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAttendenceReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Student\DataSetAttendenceReport.xss">
+      <DependentUpon>DataSetAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Student\DataSetStudentResultReport.xsc">
+      <DependentUpon>DataSetStudentResultReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Student\DataSetEnrolledCoursesReport.xsc">
+      <DependentUpon>DataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Student\DataSetEnrolledCoursesReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEnrolledCoursesReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Student\DataSetEnrolledCoursesReport.xss">
+      <DependentUpon>DataSetEnrolledCoursesReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Student\DataSetStudentResultReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStudentResultReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Student\DataSetStudentResultReport.xss">
+      <DependentUpon>DataSetStudentResultReport.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -674,6 +989,14 @@
     <Folder Include="App_Data\" />
     <Folder Include="Instructor\CourseRelatedStuff\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Parent\ParentAttendenceReport.rdlc" />
+    <EmbeddedResource Include="Parent\ParentEnrolledCoursesReport.rdlc" />
+    <EmbeddedResource Include="Parent\ParentResultReport.rdlc" />
+    <EmbeddedResource Include="Student\AttendenceReport.rdlc" />
+    <EmbeddedResource Include="Student\EnrolledCoursesReport.rdlc" />
+    <EmbeddedResource Include="Student\StudentResultReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

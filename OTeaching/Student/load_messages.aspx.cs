@@ -11,7 +11,7 @@ namespace OTeaching.Student
 {
     public partial class load_messages : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
         string studentusername = " ";
         string instructorusername = " ";
         protected void Page_Load(object sender, EventArgs e)

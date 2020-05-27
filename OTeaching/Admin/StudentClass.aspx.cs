@@ -11,7 +11,7 @@ namespace OTeaching.Admin
 {
     public partial class StudentClass : System.Web.UI.Page
     {
-        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -46,7 +46,7 @@ namespace OTeaching.Admin
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand("Select RegistrationID from StudentRegistration where RegistrationNo='"+ddlregistration.Text+"'", sqlCon);
             int id= (int) cmd.ExecuteScalar();
-            SqlCommand cmd1 = new SqlCommand("Select Count(*) from Enrollment where RegistrationID='"+id+"' AND AssignedOn='"+ Convert.ToDateTime(txtAssignment.Text) + "'", sqlCon);
+            SqlCommand cmd1 = new SqlCommand("Select Count(*) from Enrollment where RegistrationID='"+id+"'", sqlCon);
             int check = (int)cmd1.ExecuteScalar();
             if( check < 1 )
             {
