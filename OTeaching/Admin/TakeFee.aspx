@@ -50,6 +50,9 @@
         <li class="nav-item">
         <a class="nav-link" href="Courses.aspx">Courses</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="AdminReports.aspx">Reports</a>
+      </li>
          <li class="nav-item">
         <a class="nav-link" href="../Default.aspx">Logout</a>
       </li>

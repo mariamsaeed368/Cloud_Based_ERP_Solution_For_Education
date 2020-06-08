@@ -89,6 +89,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
+    <Content Include="Admin\AdminAttendenceReport.aspx" />
+    <Content Include="Admin\AdminClassReport.aspx" />
+    <Content Include="Admin\AdminCoursesReport.aspx" />
+    <Content Include="Admin\AdminExamReport.aspx" />
+    <Content Include="Admin\AdminFeeReport.aspx" />
+    <Content Include="Admin\AdminReports.aspx" />
+    <Content Include="Admin\AdminResultReport.aspx" />
     <Content Include="Admin\AssignClassCourse.aspx" />
     <Content Include="Admin\Classes.aspx" />
     <Content Include="Admin\Courses.aspx" />
@@ -99,17 +106,23 @@
     <Content Include="Admin\Fee.aspx" />
     <Content Include="Admin\icon-fonts\fontawesome-webfont.svg" />
     <Content Include="Admin\InstructorCourse.aspx" />
+    <Content Include="Admin\InstructorReport.aspx" />
     <Content Include="Admin\StudentParentRelationship.aspx" />
+    <Content Include="Admin\StudentReport.aspx" />
     <Content Include="Admin\TakeFee.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Instructor\AssignedInstructorCourse.aspx" />
+    <Content Include="Instructor\AttendanceReport.aspx" />
     <Content Include="Instructor\Attendence.aspx" />
     <Content Include="Instructor\communication.aspx" />
     <Content Include="Instructor\CreateExam.aspx" />
     <Content Include="Instructor\CreateTest.aspx" />
+    <Content Include="Instructor\InstructorAssignedCoursesReport.aspx" />
+    <Content Include="Instructor\InstructorReports.aspx" />
     <Content Include="Instructor\load_messages.aspx" />
     <Content Include="Instructor\load_new_messages.aspx" />
     <Content Include="Instructor\messages_send_from_teacher.aspx" />
+    <Content Include="Instructor\ResultReport.aspx" />
     <Content Include="Instructor\sendmessage.aspx" />
     <Content Include="Instructor\UploadCourseMaterial.aspx" />
     <Content Include="ParentLogin.aspx" />
@@ -370,6 +383,85 @@
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminAttendenceReport.aspx.cs">
+      <DependentUpon>AdminAttendenceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAttendenceReport.aspx.designer.cs">
+      <DependentUpon>AdminAttendenceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAttendenceReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminAttendenceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminClassReport.aspx.cs">
+      <DependentUpon>AdminClassReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminClassReport.aspx.designer.cs">
+      <DependentUpon>AdminClassReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminClassReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminClassReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCoursesReport.aspx.cs">
+      <DependentUpon>AdminCoursesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCoursesReport.aspx.designer.cs">
+      <DependentUpon>AdminCoursesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCoursesReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminCoursesReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdmineExamReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdmineExamReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminExamReport.aspx.cs">
+      <DependentUpon>AdminExamReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminExamReport.aspx.designer.cs">
+      <DependentUpon>AdminExamReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminFeeReport.aspx.cs">
+      <DependentUpon>AdminFeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminFeeReport.aspx.designer.cs">
+      <DependentUpon>AdminFeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminFeeReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminFeeReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminReports.aspx.cs">
+      <DependentUpon>AdminReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminReports.aspx.designer.cs">
+      <DependentUpon>AdminReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminResultReport.aspx.cs">
+      <DependentUpon>AdminResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminResultReport.aspx.designer.cs">
+      <DependentUpon>AdminResultReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminResultReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminResultReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AssignClassCourse.aspx.cs">
       <DependentUpon>AssignClassCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -405,12 +497,31 @@
     <Compile Include="Admin\InstructorCourse.aspx.designer.cs">
       <DependentUpon>InstructorCourse.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\InstructorReport.aspx.cs">
+      <DependentUpon>InstructorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InstructorReport.aspx.designer.cs">
+      <DependentUpon>InstructorReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\StudentParentRelationship.aspx.cs">
       <DependentUpon>StudentParentRelationship.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\StudentParentRelationship.aspx.designer.cs">
       <DependentUpon>StudentParentRelationship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentReport.aspx.cs">
+      <DependentUpon>StudentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentReport.aspx.designer.cs">
+      <DependentUpon>StudentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="Admin\TakeFee.aspx.cs">
       <DependentUpon>TakeFee.aspx</DependentUpon>
@@ -463,6 +574,13 @@
     <Compile Include="Instructor\AssignedInstructorCourse.aspx.designer.cs">
       <DependentUpon>AssignedInstructorCourse.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Instructor\AttendanceReport.aspx.cs">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\AttendanceReport.aspx.designer.cs">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Instructor\Attendence.aspx.cs">
       <DependentUpon>Attendence.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -491,12 +609,41 @@
     <Compile Include="Instructor\CreateTest.aspx.designer.cs">
       <DependentUpon>CreateTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Instructor\DataSetAttendanceReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAttendanceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\DataSetInstructorAssignedCourses1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetInstructorAssignedCourses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\DataSetResultReport1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetResultReport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Instructor\Instructor.Master.cs">
       <DependentUpon>Instructor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Instructor\Instructor.Master.designer.cs">
       <DependentUpon>Instructor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\InstructorAssignedCoursesReport.aspx.cs">
+      <DependentUpon>InstructorAssignedCoursesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\InstructorAssignedCoursesReport.aspx.designer.cs">
+      <DependentUpon>InstructorAssignedCoursesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\InstructorReports.aspx.cs">
+      <DependentUpon>InstructorReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\InstructorReports.aspx.designer.cs">
+      <DependentUpon>InstructorReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor\load_messages.aspx.cs">
       <DependentUpon>load_messages.aspx</DependentUpon>
@@ -518,6 +665,13 @@
     </Compile>
     <Compile Include="Instructor\messages_send_from_teacher.aspx.designer.cs">
       <DependentUpon>messages_send_from_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor\ResultReport.aspx.cs">
+      <DependentUpon>ResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor\ResultReport.aspx.designer.cs">
+      <DependentUpon>ResultReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor\sendmessage.aspx.cs">
       <DependentUpon>sendmessage.aspx</DependentUpon>
@@ -831,6 +985,91 @@
     <Content Include="DBDataSetEnrolledCoursesReport.xsc">
       <DependentUpon>DBDataSetEnrolledCoursesReport.xsd</DependentUpon>
     </Content>
+    <Content Include="Admin\AdminAttendenceReport.rdlc" />
+    <Content Include="Admin\AdminAttendenceReport.xsc">
+      <DependentUpon>AdminAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdminAttendenceReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminAttendenceReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdminAttendenceReport.xss">
+      <DependentUpon>AdminAttendenceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdminClassReport.rdlc" />
+    <Content Include="Admin\AdminClassReport.xsc">
+      <DependentUpon>AdminClassReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdminClassReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminClassReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdminClassReport.xss">
+      <DependentUpon>AdminClassReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdminCoursesReport.rdlc" />
+    <Content Include="Admin\AdminCoursesReport.xsc">
+      <DependentUpon>AdminCoursesReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdminCoursesReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminCoursesReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdminCoursesReport.xss">
+      <DependentUpon>AdminCoursesReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdmineExamReport.xsc">
+      <DependentUpon>AdmineExamReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdmineExamReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdmineExamReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdmineExamReport.xss">
+      <DependentUpon>AdmineExamReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdminExamReport.rdlc" />
+    <Content Include="Admin\AdminFeeReport.rdlc" />
+    <Content Include="Admin\AdminFeeReport.xsc">
+      <DependentUpon>AdminFeeReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdminFeeReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminFeeReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdminFeeReport.xss">
+      <DependentUpon>AdminFeeReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\AdminResultReport.rdlc" />
+    <Content Include="Admin\AdminResultReport.xsc">
+      <DependentUpon>AdminResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\AdminResultReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdminResultReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\AdminResultReport.xss">
+      <DependentUpon>AdminResultReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\InstructorReport.rdlc" />
+    <Content Include="Admin\StudentReport.rdlc" />
+    <Content Include="Admin\StudentReport.xsc">
+      <DependentUpon>StudentReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\StudentReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Admin\StudentReport.xss">
+      <DependentUpon>StudentReport.xsd</DependentUpon>
+    </Content>
     <None Include="DBDataSetEnrolledCoursesReport.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DBDataSetEnrolledCoursesReport.Designer.cs</LastGenOutput>
@@ -888,6 +1127,42 @@
     <Content Include="DBDataSetStudentResultReport.xss">
       <DependentUpon>DBDataSetStudentResultReport.xsd</DependentUpon>
     </Content>
+    <Content Include="Instructor\AttendanceReport.rdlc" />
+    <Content Include="Instructor\DataSetAttendanceReport.xsc">
+      <DependentUpon>DataSetAttendanceReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Instructor\DataSetAttendanceReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAttendanceReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Instructor\DataSetAttendanceReport.xss">
+      <DependentUpon>DataSetAttendanceReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Instructor\DataSetInstructorAssignedCourses.xsc">
+      <DependentUpon>DataSetInstructorAssignedCourses.xsd</DependentUpon>
+    </Content>
+    <None Include="Instructor\DataSetInstructorAssignedCourses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetInstructorAssignedCourses1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Instructor\DataSetInstructorAssignedCourses.xss">
+      <DependentUpon>DataSetInstructorAssignedCourses.xsd</DependentUpon>
+    </Content>
+    <Content Include="Instructor\DataSetResultReport.xsc">
+      <DependentUpon>DataSetResultReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Instructor\DataSetResultReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetResultReport1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Instructor\DataSetResultReport.xss">
+      <DependentUpon>DataSetResultReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Instructor\InstructorAssignedCoursesReport.rdlc" />
+    <Content Include="Instructor\ResultReport.rdlc" />
     <None Include="LoginDBDataSetEnrolledCourses.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>LoginDBDataSetEnrolledCourses.Designer.cs</LastGenOutput>

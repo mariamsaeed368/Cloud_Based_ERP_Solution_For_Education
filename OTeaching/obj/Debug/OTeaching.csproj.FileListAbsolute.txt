@@ -304,3 +304,163 @@ C:\Users\MR TRADDERS\Desktop\fyp\Cloud_Based_ERP_Solution_For_Education\OTeachin
 C:\Users\MR TRADDERS\Desktop\fyp\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\MR TRADDERS\Desktop\fyp\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\RdlCompile.cache
 C:\Users\MR TRADDERS\Desktop\fyp\Cloud_Based_ERP_Solution_For_Education\OTeaching\obj\Debug\RdlCompile.compiled
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.SqlServer.Types.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\EnvDTE.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\stdole.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.MSXML.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\New folder\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.SqlServer.Types.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\EnvDTE.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\stdole.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\Microsoft.MSXML.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\hp\Desktop\Project\Cloud_Based_ERP_Solution_For_Education\OTeaching\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll

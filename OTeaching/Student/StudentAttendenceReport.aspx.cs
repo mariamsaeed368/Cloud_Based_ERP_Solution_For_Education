@@ -14,7 +14,7 @@ namespace OTeaching.Student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-J0A56S8\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
             string registration_no = Session["Registration_No"].ToString();
             if (!IsPostBack) 
             {
@@ -22,7 +22,7 @@ namespace OTeaching.Student
                 {
                     conn.Open();
                 }
-                SqlCommand cmd1 = new SqlCommand("SELECT RegistrationNo FROM StudentRegistration WHERE RegistrationNo= '" + registration_no + "'", conn);
+                SqlCommand cmd1 = new SqlCommand("SELECT RegistrationID FROM StudentRegistration WHERE RegistrationNo= '" + registration_no + "'", conn);
                 int registrationID = (int)cmd1.ExecuteScalar();
 
                 //Reporting Work

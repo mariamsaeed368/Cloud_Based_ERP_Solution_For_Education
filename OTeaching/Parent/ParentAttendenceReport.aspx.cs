@@ -14,7 +14,7 @@ namespace OTeaching.Parent
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-J0A56S8\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
             string gaurdian_id = Session["GaurdianID"].ToString();
             if (!IsPostBack)
             {
@@ -39,8 +39,8 @@ namespace OTeaching.Parent
                 DataTable dt = new DataTable();
                 dt.Load(dr1);
                 conn.Close();
-                ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetParentEnrolledCoursesReport", dt));
-                ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Parent/ParentEnrolledCoursesReport.rdlc");
+                ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSetParentAttendenceReport", dt));
+                ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Parent/ParentAttendenceReport.rdlc");
                 
             }
         }

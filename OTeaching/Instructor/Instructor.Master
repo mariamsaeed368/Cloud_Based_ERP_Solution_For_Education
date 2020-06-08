@@ -44,6 +44,9 @@
          <li class="nav-item">
               <a class="nav-link" href="sendmessage.aspx">Send Message</a>
           </li>
+        <li class="nav-item">
+              <a class="nav-link" href="InstructorReports.aspx">Reports</a>
+          </li>
          <li class="nav-item">
         <a class="nav-link" href="../Default.aspx">Logout</a>
       </li>

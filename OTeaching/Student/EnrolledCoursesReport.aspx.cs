@@ -14,7 +14,7 @@ namespace OTeaching.Student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-J0A56S8\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
             if (!IsPostBack)
             {
                 ReportViewer1.SizeToReportContent = true;

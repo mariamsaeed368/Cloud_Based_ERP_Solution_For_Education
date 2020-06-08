@@ -11,7 +11,7 @@ namespace OTeaching.Student
 {
     public partial class Student : System.Web.UI.MasterPage
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-J0A56S8\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True");
         string username = " ";
         protected void Page_Load(object sender, EventArgs e)
         {
