@@ -8,29 +8,38 @@ using System.Data;
 using System.Data.SqlClient;
 using Microsoft.Reporting.WebForms;
 
+
 namespace OTeaching.Instructor
 {
     public partial class AttendanceReport : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-DABV6FC\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
+
 
             if (!IsPostBack)
             {
                 if (conn.State == ConnectionState.Closed)
+
                 {
                     conn.Open();
+
                 }
 
 
                 //Reporting Work
+
                 ReportViewer1.SizeToReportContent = true;
+
                 SqlCommand cmd = new SqlCommand();
+
                 cmd.Connection = conn;
 
+
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT  Date, Instructor.Name AS InstructorName,StudentRegistration.Name AS StudentName, StudentRegistration.RegistrationNo, Courses.CourseName, Class.ClassName,  Class.Section,(CASE WHEN status ='1'THEN 'Present' ELSE 'Absent' End) AS Status FROM Attendence INNER JOIN StudentRegistration ON Attendence.RegistrationID = StudentRegistration.RegistrationID CROSS JOIN   Class CROSS JOIN Courses CROSS JOIN Instructor";
+
+                cmd.CommandText = "select  at.AttendenceID,at.Date,ins.Name as InstructorName,s.RegistrationNo,s.Name as StudentName,   cr.CourseName ,e.ClassName as Class,e.Section,(CASE WHEN status = '1'THEN 'Present' ELSE 'Absent' End) as Status from Attendence at JOIN ClassCourse cc ON at.ClassCourseID = cc.ClassCourseID JOIN Class e ON e.ClassID = cc.ClassID JOIN InstructorCourse i ON i.InstructorCourseID = cc.InstructorCourseID JOIN Courses cr ON cr.CourseID = i.CourseID JOIN Instructor ins ON ins.InstructorID = i.InstructorID join StudentRegistration s on at.RegistrationID = s.RegistrationID group by at.RegistrationID,cr.CourseName,ins.Name,e.ClassName,e.Section, at.Date, at.Status, s.RegistrationNo, s.Name, at.AttendenceID";
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
                 SqlDataReader dr1 = cmd.ExecuteReader();

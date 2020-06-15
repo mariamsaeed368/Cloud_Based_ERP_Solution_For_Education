@@ -18,7 +18,7 @@
 
 
 
-            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True' SelectCommand="SELECT Exam.ExamName, StudentRegistration.Name AS StudentName, StudentRegistration.RegistrationNo, Exam.ExamMarks AS TotalMarks, Result.ResultScore, Result.ResultStatus FROM Exam INNER JOIN Result ON Exam.ExamID = Result.ExamID CROSS JOIN StudentRegistration"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-DABV6FC\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True' SelectCommand="SELECT Exam.ExamName, StudentRegistration.Name AS StudentName, StudentRegistration.RegistrationNo, Exam.ExamMarks AS TotalMarks, Result.ResultScore, Result.ResultStatus FROM Exam INNER JOIN Result ON Exam.ExamID = Result.ExamID CROSS JOIN StudentRegistration"></asp:SqlDataSource>
         </div>
     </form>
 </body>

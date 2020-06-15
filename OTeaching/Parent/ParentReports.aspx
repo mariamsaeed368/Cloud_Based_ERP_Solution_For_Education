@@ -5,7 +5,7 @@
         <div class="card">
    <form id="form2" runat="server">
                  <br />
-    <h2>Student Reports</h2>
+    <h2>Parent Reports</h2>
     <hr/>
             <%--Student Report panel--%>
             <asp:Panel ID="panel_parentreport" runat="server">

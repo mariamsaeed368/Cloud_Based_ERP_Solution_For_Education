@@ -14,7 +14,7 @@ namespace OTeaching.Instructor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-DABV6FC\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true");
 
             if (!IsPostBack)
             {
@@ -30,7 +30,7 @@ namespace OTeaching.Instructor
                 cmd.Connection = conn;
 
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT  Courses.CourseNo, Courses.CourseName, Instructor.Name AS InstructorName, Class.ClassName, Class.Section FROM Class CROSS JOIN Courses CROSS JOIN Instructor";
+                cmd.CommandText = "Select cr.CourseNo,cr.CourseName,ins.Name as InstructorName,cl.ClassName,cl.Section from ClassCourse c join Class cl on cl.ClassID = c.ClassID join InstructorCourse i on i.InstructorCourseID = c.InstructorCourseID join Courses cr on cr.CourseID = i.CourseID join Instructor ins on ins.InstructorID = i.InstructorID";
 
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
