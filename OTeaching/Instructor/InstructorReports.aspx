@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <label class="col-md-2 col-form-label ">Attendence Report</label>
+                        <label class="col-md-2 col-form-label ">Attendance Report</label>
                         <div class="col-md-9">
                             <asp:Button ID="Button1" runat="server" Text="Export" OnClick="btn_attendence_report_click"/>
                         </div>
