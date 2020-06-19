@@ -37,7 +37,7 @@ namespace OTeaching
         }
         private bool ExecuteSP(string SPName, List<SqlParameter> SPParameters)
         {
-            string CS = @"Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True";
+            string CS = @"Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True";
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand(SPName, con);

@@ -20,7 +20,7 @@
                 </LocalReport>
             </rsweb:ReportViewer>
 
-            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT StudentRegistration.RegistrationID, StudentRegistration.Name, StudentRegistration.RegistrationNo, StudentRegistration.Address, StudentRegistration.Email, Enrollment.StudentEnrollmentID, Enrollment.ClassID, Enrollment.RegistrationID AS Expr1, Enrollment.AssignedOn FROM StudentRegistration INNER JOIN Enrollment ON StudentRegistration.RegistrationID = Enrollment.RegistrationID"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT StudentRegistration.RegistrationID, StudentRegistration.Name, StudentRegistration.RegistrationNo, StudentRegistration.Address, StudentRegistration.Email, Enrollment.StudentEnrollmentID, Enrollment.ClassID, Enrollment.RegistrationID AS Expr1, Enrollment.AssignedOn FROM StudentRegistration INNER JOIN Enrollment ON StudentRegistration.RegistrationID = Enrollment.RegistrationID"></asp:SqlDataSource>
         </div>
     </form>
 </body>

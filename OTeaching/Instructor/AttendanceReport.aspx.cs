@@ -16,7 +16,7 @@ namespace OTeaching.Instructor
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-DABV6FC\\SQLEXPRESS;Initial Catalog=LoginDB;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True");
 
 
             if (!IsPostBack)

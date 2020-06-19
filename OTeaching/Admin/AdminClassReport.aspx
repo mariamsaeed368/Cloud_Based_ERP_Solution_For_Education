@@ -21,7 +21,7 @@
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT Class.ClassID, Class.ClassName, Class.StartTiming, Class.Section, Class.EndTiming, ClassCourse.ClassID AS Expr1, ClassCourse.InstructorCourseID, ClassCourse.ClassCourseID, ClassCourse.AssignedOn FROM Class INNER JOIN ClassCourse ON Class.ClassID = ClassCourse.ClassID"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT Class.ClassID, Class.ClassName, Class.StartTiming, Class.Section, Class.EndTiming, ClassCourse.ClassID AS Expr1, ClassCourse.InstructorCourseID, ClassCourse.ClassCourseID, ClassCourse.AssignedOn FROM Class INNER JOIN ClassCourse ON Class.ClassID = ClassCourse.ClassID"></asp:SqlDataSource>
         </div>
     </form>
 </body>

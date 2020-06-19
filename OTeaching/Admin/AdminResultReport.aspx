@@ -20,7 +20,7 @@
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT [ResultID], [ResultStatus], [ResultScore], [TotalQuestion], [ExamID], [RegistrationNo] FROM [Result]"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT [ResultID], [ResultStatus], [ResultScore], [TotalQuestion], [ExamID], [RegistrationNo] FROM [Result]"></asp:SqlDataSource>
         </div>
     </form>
 </body>

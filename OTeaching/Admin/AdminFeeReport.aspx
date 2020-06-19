@@ -20,7 +20,7 @@
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-BDBIBK1;Initial Catalog=LoginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT Fee.FeeID, Fee.ClassID, Fee.TutionFee, Fee.AdmissionFee, Fee.LibraryFee, Fee.BusFee, Fee.TotalFee, TakeFee.FeeID AS Expr1, TakeFee.StudentParentID, TakeFee.TakeFeeID, TakeFee.Date FROM Fee INNER JOIN TakeFee ON Fee.FeeID = TakeFee.FeeID"></asp:SqlDataSource>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='Data Source=DESKTOP-SI0GDUH\SQLEXPRESS;Initial Catalog=loginDB;Integrated Security=True;MultipleActiveResultSets=true' SelectCommand="SELECT Fee.FeeID, Fee.ClassID, Fee.TutionFee, Fee.AdmissionFee, Fee.LibraryFee, Fee.BusFee, Fee.TotalFee, TakeFee.FeeID AS Expr1, TakeFee.StudentParentID, TakeFee.TakeFeeID, TakeFee.Date FROM Fee INNER JOIN TakeFee ON Fee.FeeID = TakeFee.FeeID"></asp:SqlDataSource>
         </div>
     </form>
 </body>
